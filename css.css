@@ -2,6 +2,9 @@
   box-sizing: border-box;
   margin: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
   color: #000;
@@ -34,17 +37,49 @@ a {
   border-radius: 2vw;
   line-height: 140%;
   padding: 0.25vw 1vw;
+  transition-duration: 0.3s;
 }
 .btn:hover {
   background: #f24343;
   color: #fff;
+  transition-duration: 0.3s;
 }
-.btn-active {
-  background: #f24343;
+
+
+.menu-group input[type=radio] {
+	display: none;
+}
+.menu-group label {
+	cursor: pointer;
+	user-select: none;
+  background: #e9e9e9;
+  border-radius: 2vw;
+  line-height: 140%;
+  padding: 0.25vw 1vw;
+  transition-duration: 0.3s;
+}
+
+ 
+/* Checked */
+.menu-group input[type=radio]:checked + label {
+	background: #f24343;
   color: #fff;
+
 }
-.menu-group__item {
+ 
+/* Hover */
+.menu-group label:hover {
+  background: #f24343;
+  /* color: #fff; */
+  transition-duration: 0.3s;
 }
+ 
+/* Disabled */
+.form_radio input[type=radio]:disabled + label {
+	filter: grayscale(100%);
+}
+
+
 .contacts-group {
   display: flex;
   gap: 3vw;
@@ -63,7 +98,6 @@ a {
 .main-nav__item {
 }
 .info-container {
-  background: url(./img/plain.png);
   background-repeat: no-repeat;
   background-size: 70vw;
   background-position: bottom right;
@@ -88,7 +122,15 @@ a {
 .info-btn {
   padding: 1vw 4vw;
   color: #fff;
-  background-color: #f24343;
+  background-color: rgb(242, 67, 67);
+  transition-duration: .6s;
+
+}
+.info-btn:hover {
+  transition-duration: .6s;
+  background-color: rgb(242, 67, 67, 0.9);
+  transform: scale(1.05);
+  color: #000;
 }
 .poster {
   padding: 8vw 4vw;
@@ -171,6 +213,12 @@ a {
   width: 30vw;
   border-radius: 2vw;
   background-color: #f8f8f8;
+  transition-duration: .3s;
+}
+.services-container__card:hover {
+  transform: scale(1.03);
+  transition-duration: .3s;
+  background-color: rgba(240, 240, 240, 1)
 }
 .services-container__card--active {
   background-color: #f24343;
@@ -266,3 +314,4 @@ a {
 }
 .form-btn {
 }
+

@@ -9,11 +9,30 @@
   </head>
   <body>
     <header class="navigate">
+      <!-- <div class="menu-group">
+        <a class="btn" href="#">О нас</a>
+
+        <a class="btn" href="#">Услуги</a>
+
+        <a class="btn" href="#">Вакансии</a>
+
+        <a class="btn" href="#">Подрядчикам</a>
+      </div> -->
+
       <div class="menu-group">
-        <a class="btn menu-group__item" href="">О нас</a>
-        <a class="btn menu-group__item" href="">Услуги</a>
-        <a class="btn menu-group__item" href="">Вакансии</a>
-        <a class="btn menu-group__item" href="">Подрядчикам</a>
+        <input id="radio-1" type="radio" name="radio" value="1" checked>
+       <label for="radio-1">
+        О нас
+        </label>
+       
+        <input id="radio-2" type="radio" name="radio" value="2">
+        <label for="radio-2">Услуги</label>
+       
+        <input id="radio-3" type="radio" name="radio" value="3" >
+        <label for="radio-3">Вакансии</label>
+       
+        <input id="radio-4" type="radio" name="radio" value="4" >
+        <label for="radio-4">Подрядчикам</label>
       </div>
       <div class="contacts-group">
         <a class="contacts-group__item" href="">info@a2logistics.ru</a>
@@ -31,7 +50,7 @@
       <div class="info-container">
         <h1 class="headers info-header">Авиаперевозки</h1>
         <p class="info-description">Доставим ваш груз из любой точки мира</p>
-        <a href="" class="btn info-btn">Подробнее</a>
+        <a href="#services" class="btn info-btn">Подробнее</a>
       </div>
       <div class="poster">
         <h2 class="headers poster-header">С нами ваш груз в надежных руках</h2>
@@ -52,7 +71,7 @@
           </div>
         </div>
       </div>
-      <div class="services">
+      <div class="services" id="services">
         <h2 class="headers services__header">Наши услуги</h2>
         <div class="services-container">
           <div
@@ -135,5 +154,8 @@
         </form>
       </div>
     </footer>
+
+   
+    <script src="script.js"></script>
   </body>
 </html>

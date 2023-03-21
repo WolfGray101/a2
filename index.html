@@ -9,18 +9,18 @@
   </head>
   <body>
     <header class="navigate">
-      <!-- <div class="menu-group">
-        <a class="btn" href="#">О нас</a>
+      <div class="menu-group">
+        <a class="btn" href="#about">О нас</a>
 
-        <a class="btn" href="#">Услуги</a>
+        <a class="btn" href="#services">Услуги</a>
 
         <a class="btn" href="#">Вакансии</a>
 
         <a class="btn" href="#">Подрядчикам</a>
-      </div> -->
+      </div>
 
-      <div class="menu-group">
-        <input id="radio-1" type="radio" name="radio" value="1" checked>
+      <!-- <div class="menu-group">
+        <input id="radio-1" type="radio" name="radio" value="1">
        <label for="radio-1">
         О нас
         </label>
@@ -33,7 +33,7 @@
        
         <input id="radio-4" type="radio" name="radio" value="4" >
         <label for="radio-4">Подрядчикам</label>
-      </div>
+      </div> -->
       <div class="contacts-group">
         <a class="contacts-group__item" href="">info@a2logistics.ru</a>
         <a class="contacts-group__item">+7 495 152 05 54</a>
@@ -41,11 +41,23 @@
     </header>
     <main class="main">
       <div class="main-nav">
-        <a href="" class="btn main-nav__item">Услуга «Импорт 70»</a
-        ><a href="" class="btn main-nav__item">Автоперевозки</a
-        ><a href="" class="btn main-nav__item">Авиаперевозки</a
-        ><a href="" class="btn main-nav__item">Морские перевозки</a>
-        <a href="" class="btn main-nav__item">Железнодорожные перевозки</a>
+        <input id="radio-avia" type="radio" name="radio" value="avia">
+        <label for="radio-avia">
+          Услуга «Импорт 70»
+         </label>
+        
+         <input id="radio-avto" type="radio" name="radio" value="avto">
+         <label for="radio-avto">Автоперевозки</label>
+        
+         <input id="radio-sea" type="radio" name="radio" value="sea" >
+         <label for="radio-sea">Авиаперевозки</label>
+        
+         <input id="radio-train" type="radio" name="radio" value="train" >
+         <label for="radio-train">Морские перевозки</label> 
+         
+         <input id="radio-import" type="radio" name="radio" value="import" >
+         <label for="radio-import">Железнодорожные перевозки</label>
+
       </div>
       <div class="info-container">
         <h1 class="headers info-header">Авиаперевозки</h1>
@@ -53,7 +65,7 @@
         <a href="#services" class="btn info-btn">Подробнее</a>
       </div>
       <div class="poster">
-        <h2 class="headers poster-header">С нами ваш груз в надежных руках</h2>
+        <h2 class="headers poster-header" id="about">С нами ваш груз в надежных руках</h2>
         <div class="poster-items">
           <div class="poster-items__item">
             <h3 class="poster-items__item--heder">425</h3>
@@ -71,8 +83,8 @@
           </div>
         </div>
       </div>
-      <div class="services" id="services">
-        <h2 class="headers services__header">Наши услуги</h2>
+      <div class="services" >
+        <h2 class="headers services__header" id="services">Наши услуги</h2>
         <div class="services-container">
           <div
             class="services-container__card services-container__card--international"
@@ -80,7 +92,7 @@
             <h3 class="card-title">Международные автоперевозки</h3>
           </div>
           <div
-            class="services-container__card services-container__card--avia services-container__card--active"
+            class="services-container__card services-container__card--avia"
           >
             <h3 class="card-title">Авиаперевозки</h3>
           </div>

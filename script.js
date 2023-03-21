@@ -1,13 +1,13 @@
 const background = {
-  plane: "./img/plain.png",
-  car: "img/carr.png",
-  ship: "img/ship.png",
-  track: "img/track.png",
-  train: "img/train.png",
+  avia: "./img/A3.png",
+  avto: "img/A2.png",
+  sea: "img/A10.png",
+  track: "img/A4.png",
+  import: "img/A6.png",
 };
 
 const info = document.querySelector(".info-container");
-info.style.backgroundImage = `url(${background.plane})`;
+info.style.backgroundImage = `url(${background.avia})`;
 // for (let el in background) {
 //   setInterval(() => {
 //     console.log(background[el]);

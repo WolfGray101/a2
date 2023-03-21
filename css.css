@@ -213,7 +213,7 @@ input[type=radio]:disabled + label {
 .services-container__card--multimodal {
   background: url(./img/2.svg);
   background-size: 35% ;
-  background-position: center bottom 30%;
+  background-position: center bottom 20%;
 
 }
 .services-container__card--multimodal::before {
@@ -223,14 +223,14 @@ input[type=radio]:disabled + label {
   background: url(./img/3.svg);
   background-repeat: no-repeat;
   position: absolute;
-background-position: top 30% left 15%;
+background-position: top 33% left 15%;
   background-size: 20% ;
 
 }
 .services-container__card--project {
   background: url(./img/5.svg);
   background-size: 40% ;
-  background-position: center bottom 30%;
+  background-position: center bottom 20%;
 
 }
 .services-container__card--stock {
@@ -242,7 +242,7 @@ background-position: top 30% left 15%;
 .services-container__card--insurance {
   background: url(./img/7.svg);
   background-size: 20% ;
-  background-position: center bottom 30%;
+  background-position: center bottom 20%;
 
 }
 .services-container__card--customs {

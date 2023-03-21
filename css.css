@@ -107,8 +107,8 @@ input[type=radio]:disabled + label {
 .info-container {
   background-repeat: no-repeat;
   background-size: 70vw;
-  background-position: bottom right;
-  padding: 5vw 0 20vw;
+  background-position: top -4vw right;
+  padding: 5vw 0 13vw;
   margin: 0 6vw;
 }
 .headers {
@@ -173,7 +173,7 @@ input[type=radio]:disabled + label {
 }
 .services-container {
   display: flex;
-  row-gap: 3vw;
+  row-gap: 2vw;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 2.5vw;
@@ -254,7 +254,7 @@ background-position: top 33% left 15%;
 .services-container__card {
   padding: 3vw 5vw 10vw;
   background-repeat: no-repeat;
-  width: 25vw;
+  width: 28vw;
   border-radius: 2vw;
   background-color: #f8f8f8;
   transition-duration: .3s;

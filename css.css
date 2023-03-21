@@ -205,8 +205,8 @@ input[type=radio]:disabled + label {
 }
 .services-container__card--train {
   background: url(./img/4.svg);
-  background-size: 20% ;
-  background-position: center bottom 30%;
+  background-size: 25% ;
+  background-position: center bottom 20%;
 
 }
 .services-container__card--sea {

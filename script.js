@@ -1,35 +1,39 @@
 const background = {
   avia: {
     img:"./img/A3.png",
-    link: ''
+    link: '#123'
   },
   avto: {
     img:"img/A2.png",
-    link: ''
+    link: '#321'
   },
   sea: {
   img: "img/A10.png",
-  link: ''
+  link: '#456'
 },
   train: {
     img:"img/A4.png",
-  link: ''
+  link: '#789'
 },
 
   import: {
     img:"img/A6.png",
-  link: ''
+  link: '#987'
 }
 };
 
 const info = document.querySelector(".info-container");
-info.style.backgroundImage = `url(${background.avia.img})`;
 const switcher = document.querySelectorAll("input[type=radio]");
+const infoBtn = document.querySelector('.info-btn')
+
+info.style.backgroundImage = `url(${background.avia.img})`;
+infoBtn.href =`${background.avia.link}`
+
 
 for (let el of switcher) {
   el.addEventListener('change', ()=> {
-    console.log(background[el.id].img);
 info.style.backgroundImage = `url(${background[el.id].img})`;
+infoBtn.href =`${background[el.id].link}`
 
   })
 }

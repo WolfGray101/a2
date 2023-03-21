@@ -271,6 +271,10 @@ background-position: top 33% left 15%;
   transition-duration: .3s;
   background-color: #f24343;
 }
+.services-container__card:hover h3{
+  color: #e9e9e9;
+}
+
 
 .services-container__card--active .card-title {
   color: #fff;

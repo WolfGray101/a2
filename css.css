@@ -115,6 +115,7 @@ input[type=radio]:disabled + label {
   background-position: top -2vw right 3vw;
   padding: 5vw 0 13vw;
   margin: 0 6vw;
+  transition-duration: .5s;
 }
 .headers {
   color: #f24343;

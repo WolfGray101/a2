@@ -30,7 +30,7 @@ a {
 }
 .menu-group::before {
   content: "";
-  background: url(./img/logo.png);
+  background: url(./img/EN.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 4.5vw;

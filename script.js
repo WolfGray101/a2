@@ -10,10 +10,10 @@ const background = {
   avto: {
     title: 'Международная логистика и грузоперевозки',
     description: 'Доставим ваш груз из любой точки мира',
-    img: "img/A4.png",
+    img: "img/A4-r.png",
     link: "#321",
-    width: "70%",
-    top: "2vw",
+    width: "60%",
+    top: "4vw",
   },
   sea: {
     title: 'Морские перевозки',
@@ -28,8 +28,8 @@ const background = {
     description: 'Доставим ваш груз из любой точки мира',
     img: "img/A6.png",
     link: "#789",
-    width: "65%",
-    top: "4vw",
+    width: "60%",
+    top: "5vw",
   },
 
   import: {

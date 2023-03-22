@@ -121,7 +121,7 @@ input[type=radio]:disabled + label {
 }
 .info-container__img {
   position: absolute;
-  right: 4vw;
+  right: 0vw;
   opacity: .75;
   /* transition-duration: .3s; */
 }
@@ -135,6 +135,7 @@ input[type=radio]:disabled + label {
   margin-bottom: 2vw;
   width: 45vw;
   font-weight: 500;
+  transition-duration: 0.5s;
 }
 .info-description {
   margin-bottom: 3vw;
@@ -143,6 +144,8 @@ input[type=radio]:disabled + label {
   line-height: 1.75vw;
   width: 25vw;
   font-weight: 500;
+  transition-duration: 0.5s;
+
 }
 .info-btn {
   padding: 1vw 4vw;

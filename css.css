@@ -457,3 +457,429 @@ background-position: top 33% left 15%;
   transition-duration: .3s;
 }
 
+@media screen and (min-width:1120px) and (max-width:1440px){
+
+  .navigate {
+    padding: 1vw 6vw;
+    font-size: 1.1vw;
+  }
+  .menu-group {
+    gap: 2vw;
+  }
+  .menu-group::before {
+    width: 4.5vw;
+    height: 4.5vw;
+    margin-right: 5vw;
+  }
+  .btn {
+    border-radius: 2vw;
+    padding: 0.25vw 1vw;
+  }
+  label {
+    border-radius: 2vw;
+  }
+  .contacts-group {
+    gap: 3vw;
+  }
+ 
+  .main {
+    font-size: 1.1vw;
+  }
+  .main-nav {
+    gap: 2vw;
+    padding: 1.5vw;
+  }
+
+  .info-container {
+    background-size: 60vw;
+    background-position: top -2vw right 3vw;
+    padding: 5vw 0 13vw;
+    margin: 0 6vw;
+  }
+  .info-container__img {
+    right: 0vw;
+    opacity: .75;
+  }
+  .headers {
+    font-size: 3.3vw;
+  }
+  .info-header {
+    margin-bottom: 2vw;
+    width: 45vw;
+  }
+  .info-description {
+    margin-bottom: 3vw;
+    font-size: 1.65vw;
+    line-height: 1.75vw;
+    width: 25vw;
+  }
+  .info-btn {
+    padding: 1vw 4vw;
+  }
+  .poster {
+    padding: 6vw 6vw;
+  }
+  .poster-items {
+    margin-top: 2.5vw;
+  }
+  .poster-items__item {
+    width: 22vw;
+    padding: 1.2vw 0 0;
+  }
+  .poster-items__item--heder {
+    font-size: 4vw;
+  }
+  .poster-items__item--description {
+    margin-top: 0.5vw;
+  }
+  .services {
+    padding: 6vw 6vw;
+  }
+  .services-container {
+    row-gap: 2vw;
+    margin-top: 2.5vw;
+  }
+  .services-container__card--international {
+    background-position: center bottom 30%;
+    background-size: 40% ;
+  }
+  .services-container__card--international:hover {
+    background-position: center bottom 30%;
+    background-size: 40% ;
+  }
+  .services-container__card--avia {
+    background-size: 60% ;
+    background-position: center bottom 30%;
+  }
+  .services-container__card--avia:hover {
+    background-size: 60% ;
+    background-position: center bottom 30%;
+  
+  }
+  .services-container__card--train {
+    background-size: 25% ;
+    background-position: center bottom 20%;
+  }
+  .services-container__card--train:hover {
+    background-size: 25% ;
+    background-position: center bottom 20%;
+  }
+  .services-container__card--sea {
+    background-size: 40% ;
+    background-position: center bottom 30%;
+  }
+  .services-container__card--sea:hover {
+    background-size: 40% ;
+    background-position: center bottom 30%;
+  }
+  .services-container__card--multimodal {
+    background-size: 35% ;
+    background-position: center bottom 20%;
+  }
+  .services-container__card--multimodal:hover {
+    background-size: 35% ;
+    background-position: center bottom 20%;
+  }
+  .services-container__card--multimodal::before {
+  background-position: top 33% left 15%;
+    background-size: 20% ;
+  }
+  .services-container__card--multimodal:hover::before {
+  background-position: top 33% left 15%;
+    background-size: 20% ;
+  }
+  .services-container__card--project {
+    background-size: 40% ;
+    background-position: center bottom 20%;
+  }
+  .services-container__card--project:hover {
+    background-size: 40% ;
+    background-position: center bottom 20%;
+  }
+  .services-container__card--stock {
+    background-size: 30% ;
+    background-position: center bottom 25%;
+  }
+  .services-container__card--stock:hover {
+    background-size: 30% ;
+    background-position: center bottom 25%;
+  }
+  .services-container__card--insurance {
+    background-size: 20% ;
+    background-position: center bottom 20%;
+  }
+  .services-container__card--insurance:hover {
+    background-size: 20% ;
+    background-position: center bottom 20%;
+  }
+  .services-container__card--customs {
+    background-size: 19% ;
+    background-position: center bottom 21%;
+  }
+  .services-container__card--customs:hover {
+    background-size: 19% ;
+    background-position: center bottom 21%;
+  }
+  .services-container__card {
+    padding: 3vw 5vw 13vw;
+    width: 28vw;
+    border-radius: 2vw;
+  }
+  .card-title {
+    font-size: 2vw;
+  }
+  .services-container__card--active .card-title {
+    font-size: 2vw;
+  }
+  .footer {
+    padding: 8vw 6vw;
+  }
+  .footer-headers__logo {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+  .footer-headers__form-header {
+    font-size: 2vw;
+    width: 30vw;
+  }
+  .footer-items {
+    margin-top: 3vw;
+  }
+  .footer-item {
+    gap: 1vw;
+    font-size: 1.5vw;
+  }
+  .footer-item__map,
+  .footer-item__header,
+  .footer-item__phone,
+  .footer-item__email {
+    font-size: 1.5vw;
+  }
+  .footer-item__form {
+    width: 30vw;
+    gap: 1vw;
+  }
+  .footer-item__form input[type="text"] {
+    padding: 1vw 2vw 1vw;
+  }
+  ::placeholder {
+    font-size: 1.1vw;
+  }
+  .button {
+    padding: 1vw;
+    border-radius: 2vw;
+    margin-top: 1vw;
+  }
+  .form-btn:hover {
+    box-shadow: 0 0 .8vw .05vw #f8f8f8;
+  } 
+}
+
+@media screen and (min-width:1439px){
+body {
+  width: 1440px;
+  margin: 0 auto;
+}
+  .navigate {
+    padding: 1rem 6rem;
+    font-size: 1.15rem;
+  }
+  .menu-group {
+    gap: 2rem;
+  }
+  .menu-group::before {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 5rem;
+  }
+  .btn {
+    border-radius: 2rem;
+    padding: 0.25rem 1rem;
+  }
+  label {
+    border-radius: 2rem;
+  }
+  .contacts-group {
+    gap: 3rem;
+  }
+  .main {
+    font-size: 1.15rem;
+  }
+  .main-nav {
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .info-container {
+    background-size: 60%;
+    background-position: top -2rem right 3rem;
+    padding: 5rem 0 13rem;
+    margin: 0 6rem;
+  }
+  .headers {
+    font-size: 3.3rem;
+  }
+  .info-header {
+    margin-bottom: 2rem;
+    width: 60%;
+  }
+  .info-description {
+    margin-bottom: 3rem;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    width: 25%;
+  }
+  .info-btn {
+    padding: 1rem 4rem;
+  }
+  .poster,
+  .services,
+  .footer {
+    padding: 6rem 6rem;
+  }
+  .poster-items {
+    margin-top: 2.5rem;
+  }
+  .poster-items__item {
+    width: 22%;
+    padding: 1.25rem 0 0;
+  }
+  .poster-items__item--heder {
+    font-size: 4rem;
+  }
+  .poster-items__item--description {
+    margin-top: 0.5rem;
+  }
+  .services-container {
+    row-gap: 2rem;
+    margin-top: 2.5rem;
+  }
+  .services-container__card--international {
+    background-position: center bottom 30%;
+    background-size: 40% ;
+  }
+  .services-container__card--international:hover {
+    background-position: center bottom 30%;
+    background-size: 40% ;
+  }
+  .services-container__card--avia {
+    background-size: 60% ;
+    background-position: center bottom 30%;
+  }
+  .services-container__card--avia:hover {
+    background-size: 60% ;
+    background-position: center bottom 30%;
+  
+  }
+  .services-container__card--train {
+    background-size: 25% ;
+    background-position: center bottom 20%;
+  }
+  .services-container__card--train:hover {
+    background-size: 25% ;
+    background-position: center bottom 20%;
+  }
+  .services-container__card--sea {
+    background-size: 40% ;
+    background-position: center bottom 30%;
+  }
+  .services-container__card--sea:hover {
+    background-size: 40% ;
+    background-position: center bottom 30%;
+  }
+  .services-container__card--multimodal {
+    background-size: 35% ;
+    background-position: center bottom 20%;
+  }
+  .services-container__card--multimodal:hover {
+    background-size: 35% ;
+    background-position: center bottom 20%;
+  }
+  .services-container__card--multimodal::before {
+  background-position: top 33% left 15%;
+    background-size: 20% ;
+  }
+  .services-container__card--multimodal:hover::before {
+  background-position: top 33% left 15%;
+    background-size: 20% ;
+  }
+  .services-container__card--project {
+    background-size: 40% ;
+    background-position: center bottom 20%;
+  }
+  .services-container__card--project:hover {
+    background-size: 40% ;
+    background-position: center bottom 20%;
+  }
+  .services-container__card--stock {
+    background-size: 30% ;
+    background-position: center bottom 25%;
+  }
+  .services-container__card--stock:hover {
+    background-size: 30% ;
+    background-position: center bottom 25%;
+  }
+  .services-container__card--insurance {
+    background-size: 20% ;
+    background-position: center bottom 20%;
+  }
+  .services-container__card--insurance:hover {
+    background-size: 20% ;
+    background-position: center bottom 20%;
+  }
+  .services-container__card--customs {
+    background-size: 19% ;
+    background-position: center bottom 21%;
+  }
+  .services-container__card--customs:hover {
+    background-size: 19% ;
+    background-position: center bottom 21%;
+  }
+  .services-container__card {
+    padding: 3rem 5rem 13rem;
+    width: 28%;
+    border-radius: 2rem;
+  }
+  .card-title {
+    font-size: 2vw;
+  }
+  .footer-headers__logo {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .footer-headers__form-header {
+    font-size: 2rem;
+    width: 40%;
+  }
+  .footer-items {
+    margin-top: 3rem;
+  }
+  .footer-item {
+    gap: 1vw;
+    font-size: 1.5rem;
+  }
+  .footer-item__map,
+  .footer-item__header,
+  .footer-item__phone,
+  .footer-item__email {
+    font-size: 1.5rem;
+  }
+  .footer-item__form {
+    width: 40%;
+    gap: 1rem;
+  }
+  .footer-item__form input[type="text"] {
+    padding: 1rem 2rem 1rem;
+  }
+  ::placeholder {
+    font-size: 1.1rem;
+  }
+  .button {
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+  }
+  .form-btn:hover {
+    box-shadow: 0 0 .8rem .05rem #f8f8f8;
+  } 
+}

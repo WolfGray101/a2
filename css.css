@@ -116,6 +116,14 @@ input[type=radio]:disabled + label {
   padding: 5vw 0 13vw;
   margin: 0 6vw;
   transition-duration: .5s;
+  position: relative;
+}
+.info-container__img {
+  position: absolute;
+  top: 10%;
+  right: 4vw;
+  width: 65%;
+  opacity: .75;
 }
 .headers {
   color: #f24343;

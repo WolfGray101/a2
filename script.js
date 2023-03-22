@@ -26,7 +26,7 @@ const info = document.querySelector(".info-container");
 const switcher = document.querySelectorAll("input[type=radio]");
 const infoBtn = document.querySelector('.info-btn')
 
-info.style.backgroundImage = `url(${background.avia.img})`;
+// info.style.backgroundImage = `url(${background.avia.img})`;
 infoBtn.href =`${background.avia.link}`
 
 

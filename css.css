@@ -115,26 +115,28 @@ input[type=radio]:disabled + label {
   background-position: top -2vw right 3vw;
   padding: 5vw 0 13vw;
   margin: 0 6vw;
-  transition-duration: .5s;
+  /* transition-duration: .5s; */
   position: relative;
 }
 .info-container__img {
   position: absolute;
-  top: 10%;
   right: 4vw;
-  width: 65%;
   opacity: .75;
+  /* transition-duration: .3s; */
 }
 .headers {
   color: #f24343;
   font-size: 3vw;
   line-height: 120%;
+  font-weight: 500;
+
 }
 .info-header {
   margin-bottom: 2vw;
+  width: 45vw;
 }
 .info-description {
-  margin-bottom: 2.5vw;
+  margin-bottom: 3vw;
   color: rgba(19, 19, 19, 0.7);
   font-size: 1.5vw;
   line-height: 1.75vw;

@@ -1,41 +1,70 @@
 const background = {
   avia: {
-    img:"./img/A3.png",
-    link: '#123'
+    title: 'Авиаперевозки',
+    description: 'Доставим ваш груз из любой точки мира',
+    img: "./img/A3.png",
+    link: "#123",
+    width: "75%",
+    top: "-2vw",
   },
   avto: {
-    img:"img/A2.png",
-    link: '#321'
+    title: 'Международная логистика и грузоперевозки',
+    description: 'Доставим ваш груз из любой точки мира',
+    img: "img/A4.png",
+    link: "#321",
+    width: "70%",
+    top: "2vw",
   },
   sea: {
-  img: "img/A10.png",
-  link: '#456'
-},
+    title: 'Морские перевозки',
+    description: 'Доставим ваш груз из любой точки мира',
+    img: "img/A2.png",
+    link: "#456",
+    width: "65%",
+    top: "3vw",
+  },
   train: {
-    img:"img/A4.png",
-  link: '#789'
-},
+    title: 'Железнодорожные перевозки',
+    description: 'Доставим ваш груз из любой точки мира',
+    img: "img/A6.png",
+    link: "#789",
+    width: "65%",
+    top: "4vw",
+  },
 
   import: {
-    img:"img/A6.png",
-  link: '#987'
-}
+    title: 'Услуга «Импорт 70»',
+    description: 'Доставим ваш груз из любой точки мира',
+    img: "img/A10.png",
+    link: "#987",
+    width: "65%",
+    top: "2vw",
+  },
 };
 
-const info = document.querySelector(".info-container");
+const infoImg = document.querySelector(".info-container__img");
 const switcher = document.querySelectorAll("input[type=radio]");
-const infoBtn = document.querySelector('.info-btn')
+const infoBtn = document.querySelector(".info-btn");
+const infoTitle = document.querySelector('.info-header')
+const infoDescription = document.querySelector('.info-description')
 
-// info.style.backgroundImage = `url(${background.avia.img})`;
-infoBtn.href =`${background.avia.link}`
+infoBtn.href = `${background.avto.link}`;
+infoImg.src = `./${background.avto.img}`;
+infoImg.style.width = `${background.avto.width}`;
+infoImg.style.top = `${background.avto.top}`;
 
 
 for (let el of switcher) {
-  el.addEventListener('change', ()=> {
-info.style.backgroundImage = `url(${background[el.id].img})`;
-infoBtn.href =`${background[el.id].link}`
+  el.addEventListener("change", () => {
 
-  })
+    const body = background[el.id];
+    infoImg.src = `./${body.img}`;
+    infoImg.style.width = `${body.width}`;
+    infoImg.style.top = `${body.top}`;
+    infoBtn.href = `${body.link}`;
+    infoTitle.textContent=`${body.title}`
+    infoDescription.textContent=`${body.description}`
+  });
 }
 
 const menuBtn = document.querySelectorAll(".btn");
@@ -44,13 +73,14 @@ for (let el of menuBtn) {
   el.addEventListener("click", () => {
     !el.classList.entries("checked")
       ? menuBtn.forEach((element) => {
-        element.classList.remove("checked");
+          element.classList.remove("checked");
         })
       : null;
   });
 }
 
-$('.varrad').change(function(){
-  if($(this).prop('checked')) $(this).next('.variant').children('.vvar').text('Правильный');
-  else $(this).next('.variant').children('.vvar').text('Вариант');
+$(".varrad").change(function () {
+  if ($(this).prop("checked"))
+    $(this).next(".variant").children(".vvar").text("Правильный");
+  else $(this).next(".variant").children(".vvar").text("Вариант");
 });

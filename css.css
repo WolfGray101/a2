@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -126,21 +127,22 @@ input[type=radio]:disabled + label {
 }
 .headers {
   color: #f24343;
-  font-size: 3vw;
+  font-size: 3.3vw;
   line-height: 120%;
-  font-weight: 500;
-
+  font-weight: 600;
 }
 .info-header {
   margin-bottom: 2vw;
   width: 45vw;
+  font-weight: 500;
 }
 .info-description {
   margin-bottom: 3vw;
   color: rgba(19, 19, 19, 0.7);
-  font-size: 1.5vw;
+  font-size: 1.65vw;
   line-height: 1.75vw;
   width: 25vw;
+  font-weight: 500;
 }
 .info-btn {
   padding: 1vw 4vw;
@@ -161,7 +163,7 @@ input[type=radio]:disabled + label {
 }
 
 .poster-header {
-  width: 30%;
+  width: 40%;
 }
 .poster-items {
   display: flex;
@@ -176,7 +178,7 @@ input[type=radio]:disabled + label {
 .poster-items__item--heder {
   font-size: 4vw;
   line-height: 110%;
-  font-weight: 400;
+  font-weight: 300;
 }
 .poster-items__item--description {
   color: #f24343;
@@ -314,6 +316,7 @@ background-position: top 33% left 15%;
   font-size: 2vw;
   line-height: 120%;
   width: 30vw;
+  font-weight: 600;
 }
 .footer-items {
   display: flex;

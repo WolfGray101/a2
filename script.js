@@ -37,7 +37,7 @@ const background = {
     description: 'Доставим ваш груз из любой точки мира',
     img: "img/A10-r.png",
     link: "#987",
-    width: "65%",
+    width: "55%",
     top: "2vw",
   },
 };

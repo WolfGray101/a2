@@ -13,9 +13,16 @@ a {
   text-decoration: none;
   color: #000;
 }
+body{
+  position: relative;
+}
 .header-container {
   width: 100%;
   border-bottom: #f24343 1px solid;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 5;
 }
 .poster-container {
   width: 100%;

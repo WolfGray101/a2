@@ -37,8 +37,9 @@ const background = {
     description: 'Доставим ваш груз из любой точки мира',
     img: "img/A10-r.png",
     link: "#987",
-    width: "55%",
+    width: "45%",
     top: "2vw",
+    right: '4rem'
   },
 };
 
@@ -62,6 +63,10 @@ for (let el of switcher) {
     infoImg.style.width = `${body.width}`;
     infoImg.style.top = `${body.top}`;
     infoBtn.href = `${body.link}`;
+    console.log(body.right);
+    body.right? 
+    infoImg.style.right = `${body.right}`:
+    infoImg.style.right = 0;
     infoTitle.textContent=`${body.title}`
     infoDescription.textContent=`${body.description}`
   });
@@ -79,8 +84,8 @@ for (let el of menuBtn) {
   });
 }
 
-$(".varrad").change(function () {
-  if ($(this).prop("checked"))
-    $(this).next(".variant").children(".vvar").text("Правильный");
-  else $(this).next(".variant").children(".vvar").text("Вариант");
-});
+// $(".varrad").change(function () {
+//   if ($(this).prop("checked"))
+//     $(this).next(".variant").children(".vvar").text("Правильный");
+//   else $(this).next(".variant").children(".vvar").text("Вариант");
+// });

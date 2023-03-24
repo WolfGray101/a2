@@ -100,13 +100,21 @@ label:hover {
 input[type=radio]:disabled + label {
 	filter: grayscale(100%);
 }
-
-
 .contacts-group {
   display: flex;
   gap: 3vw;
 }
-.contacts-group__item {
+.contact-btn {
+  padding: .5vw 2vw;
+  color: #fff;
+  background-color: rgb(242, 67, 67);
+  transition-duration: .6s;
+}
+.contact-btn:hover {
+  transition-duration: .6s;
+  background-color: rgb(242, 67, 67, 0.9);
+  transform: scale(1.05);
+  color: #000;
 }
 .main {
   font-size: 1.1vw;

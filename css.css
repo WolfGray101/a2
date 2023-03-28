@@ -94,7 +94,7 @@ transform: scale(1.05);
   background-size: cover;
   width: 4.5vw;
   height: 4.5vw;
-  margin-right: 5vw;
+  /* margin-right: 5vw; */
 }
 .btn {
   background: #f8f8f8;
@@ -521,7 +521,7 @@ input[type="radio"]:disabled + label {
   .menu-group::before {
     width: 4.5vw;
     height: 4.5vw;
-    margin-right: 3vw;
+    /* margin-right: 3vw; */
   }
   .btn {
     border-radius: 2vw;
@@ -743,7 +743,7 @@ input[type="radio"]:disabled + label {
   .menu-group::before {
     width: 4.5rem;
     height: 4.5rem;
-    margin-right: 5rem;
+    /* margin-right: 5rem; */
   }
   .btn {
     border-radius: 2rem;

@@ -9,18 +9,18 @@
   </head>
   <body>
     <div class="header-container">
-    <header class="navigate">
-      <div class="menu-group">
-        <a class="btn" href="#about">О нас</a>
+      <header class="navigate">
+        <div class="menu-group">
+          <a class="btn" href="#about">О нас</a>
 
-        <a class="btn" href="#services">Услуги</a>
+          <a class="btn" href="#services">Услуги</a>
 
-        <a class="btn" href="#">Вакансии</a>
+          <a class="btn" href="#">Вакансии</a>
 
-        <a class="btn" href="#">Подрядчикам</a>
-      </div>
+          <a class="btn" href="#">Подрядчикам</a>
+        </div>
 
-      <!-- <div class="menu-group">
+        <!-- <div class="menu-group">
         <input id="radio-1" type="radio" name="radio" value="1">
        <label for="radio-1">
         О нас
@@ -35,63 +35,67 @@
         <input id="radio-4" type="radio" name="radio" value="4" >
         <label for="radio-4">Подрядчикам</label>
       </div> -->
-      <div class="contacts-group">
-        <a class="contacts-group__item" href="">info@a2logistics.ru</a>
-        <a class="contacts-group__item">+7 495 152 05 54</a>
-        <!-- <a href="#footer" class="btn contact-btn">Рассчитать <br> стоимость</a> -->
-
-      </div>
-    </header>
-  </div>
+        <div class="contacts-group">
+          <div class="contacts-group__items">
+            <a class="contacts-group__item contacts-group__item--mail" href=""
+              >info@a2logistics.ru</a
+            >
+          </div>
+          <div class="contacts-group__items">
+            <a class="contacts-group__item contacts-group__item--phone"
+              >+7 495 152 05 54</a
+            >
+            <a href="#footer" class="btn contact-btn">Рассчитать <br> стоимость</a>
+          </div>
+        </div>
+      </header>
+    </div>
     <main class="main">
       <div class="main-nav">
-        <input id="import" type="radio" name="radio" value="import" >
-        <label for="import">
-          Услуга «Импорт 70»
-         </label>
-        
-      
-        
-         <input id="avia" type="radio" name="radio" value="avia" >
-         <label for="avia">Авиаперевозки</label>
-        
-         <input id="sea" type="radio" name="radio" value="sea" >
-         <label for="sea">Морские перевозки</label> 
-         <input id="avto" type="radio" name="radio" value="avto" checked>
-         <label for="avto">Автомобильные перевозки</label>
-         
-         <input id="train" type="radio" name="radio" value="train" >
-         <label for="train">Железнодорожные перевозки</label>
+        <input id="import" type="radio" name="radio" value="import" />
+        <label for="import"> Услуга «Импорт 70» </label>
 
+        <input id="avia" type="radio" name="radio" value="avia" />
+        <label for="avia">Авиаперевозки</label>
+
+        <input id="sea" type="radio" name="radio" value="sea" />
+        <label for="sea">Морские перевозки</label>
+        <input id="avto" type="radio" name="radio" value="avto" checked />
+        <label for="avto">Автомобильные перевозки</label>
+
+        <input id="train" type="radio" name="radio" value="train" />
+        <label for="train">Железнодорожные перевозки</label>
       </div>
       <div class="info-container">
-        <h1 class="headers info-header">Международная логистика и грузоперевозки</h1>
-        <p class="info-description">Доставим груз из любой точки мира</p>
+        <h1 class="headers info-header"></h1>
+        <p class="info-description"></p>
         <a href="#services" class="btn info-btn">Подробнее</a>
-        <img class='info-container__img' alt="">
+        <img class="info-container__img" alt="" />
       </div>
       <div class="poster-container">
         <div class="poster">
-        <h2 class="headers poster-header" id="about">С нами ваш груз в надежных руках</h2>
-        <div class="poster-items">
-          <div class="poster-items__item">
-            <h3 class="poster-items__item--heder">425</h3>
-            <p class="poster-items__item--description">Выполненных заказов</p>
-          </div>
-          <div class="poster-items__item">
-            <h3 class="poster-items__item--heder">800+</h3>
-            <p class="poster-items__item--description">Довольных клиентов</p>
-          </div>
-          <div class="poster-items__item">
-            <h3 class="poster-items__item--heder">250+</h3>
-            <p class="poster-items__item--description">
-              Тонн доставленных грузов
-            </p>
+          <h2 class="headers poster-header" id="about">
+            С нами ваш груз в надежных руках
+          </h2>
+          <div class="poster-items">
+            <div class="poster-items__item">
+              <h3 class="poster-items__item--heder">425</h3>
+              <p class="poster-items__item--description">Выполненных заказов</p>
+            </div>
+            <div class="poster-items__item">
+              <h3 class="poster-items__item--heder">800+</h3>
+              <p class="poster-items__item--description">Довольных клиентов</p>
+            </div>
+            <div class="poster-items__item">
+              <h3 class="poster-items__item--heder">250+</h3>
+              <p class="poster-items__item--description">
+                Тонн доставленных грузов
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      </div>
-      <div class="services" >
+      <div class="services">
         <h2 class="headers services__header" id="services">Наши услуги</h2>
         <div class="services-container">
           <div
@@ -99,9 +103,7 @@
           >
             <h3 class="card-title">Международные автоперевозки</h3>
           </div>
-          <div
-            class="services-container__card services-container__card--avia"
-          >
+          <div class="services-container__card services-container__card--avia">
             <h3 class="card-title">Авиаперевозки</h3>
           </div>
           <div class="services-container__card services-container__card--train">
@@ -137,47 +139,46 @@
       </div>
     </main>
     <div class="footer-container">
-    <footer class="footer">
-      <div class="footer-headers">
-        <div class="footer-headers__logo"></div>
-        <h2 class="footer-headers__form-header">
-          Оставьте ваши контакты и мы с вами свяжемся
-        </h2>
-      </div>
-      <div class="footer-items">
-        <div class="footer-item">
-          <a href="" class="footer-item__map">О нас</a>
-          <a href="" class="footer-item__map">Услуги</a>
-          <a href="" class="footer-item__map">Вакансии</a>
-          <a href="" class="footer-item__map">Подрядчикам</a>
+      <footer class="footer">
+        <div class="footer-headers">
+          <div class="footer-headers__logo"></div>
+          <h2 class="footer-headers__form-header">
+            Оставьте ваши контакты и мы с вами свяжемся
+          </h2>
         </div>
-        <div class="footer-item">
-          <h3 class="footer-item__header">Контакты:</h3>
-          <a href="" class="footer-item__phone">+7 495 152 05 54</a>
-          <a href="" class="footer-item__email">info@a2logistics.ru</a>
+        <div class="footer-items">
+          <div class="footer-item">
+            <a href="" class="footer-item__map">О нас</a>
+            <a href="" class="footer-item__map">Услуги</a>
+            <a href="" class="footer-item__map">Вакансии</a>
+            <a href="" class="footer-item__map">Подрядчикам</a>
+          </div>
+          <div class="footer-item">
+            <h3 class="footer-item__header">Контакты:</h3>
+            <a href="" class="footer-item__phone">+7 495 152 05 54</a>
+            <a href="" class="footer-item__email">info@a2logistics.ru</a>
+          </div>
+          <form class="footer-item__form">
+            <label for="">
+              <input type="text" placeholder="Имя" />
+            </label>
+            <label for="">
+              <input type="text" placeholder="+ 375 (29) --- -- --" />
+            </label>
+            <label for="">
+              <input type="text" placeholder="E-mail" />
+            </label>
+            <label for="privacy">
+              <input type="checkbox" id="privacy" />
+              Даю согласие на обработку Персональных данных
+            </label>
+
+            <button class="button form-btn">ОСТАВИТЬ ЗАЯВКУ</button>
+          </form>
         </div>
-        <form class="footer-item__form">
-          <label for="">
-            <input type="text" placeholder="Имя" />
-          </label>
-          <label for="">
-            <input type="text" placeholder="+ 375 (29) --- -- --" />
-          </label>
-          <label for="">
-            <input type="text" placeholder="E-mail" />
-          </label>
-          <label for="privacy">
-            <input type="checkbox" id="privacy" />
-            Даю согласие на обработку Персональных данных
-          </label>
+      </footer>
+    </div>
 
-          <button class="button form-btn">ОСТАВИТЬ ЗАЯВКУ</button>
-        </form>
-      </div>
-    </footer>
-  </div>
-
-   
     <script src="script.js"></script>
   </body>
 </html>

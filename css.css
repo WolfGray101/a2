@@ -38,6 +38,17 @@ body {
   gap: 0.5rem;
   align-items: center;
 }
+.contacts-group__social {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.contact-group__social-item img {
+  width: 2rem;
+}
+.contact-group__social-item:hover img {
+transform: scale(1.05);
+}
 .contacts-group__item {
   display: flex;
   gap: 0;

@@ -37,6 +37,7 @@ body {
   flex-direction: column;
   gap: 0.5rem;
   align-items: center;
+  justify-content: center;
 }
 .contacts-group__social {
   width: 100%;
@@ -415,7 +416,7 @@ input[type="radio"]:disabled + label {
   justify-content: space-between;
 }
 .footer-headers__logo {
-  background: url(./img/logo.png);
+  background: url(./img/EN.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 4.5vw;
@@ -460,12 +461,17 @@ input[type="radio"]:disabled + label {
   line-height: 140%;
   width: fit-content;
 }
-.footer-item__header {
+.contacts-group__item--mail:hover,
+.contacts-group__item--phone:hover {
+  
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+    border-bottom: 0.1vw solid #000;
+    line-height: 140%;
+    width: fit-content;
+  
 }
-.footer-item__phone {
-}
-.footer-item__email {
-}
+
 .footer-item__form {
   width: 30vw;
   display: flex;
@@ -750,7 +756,7 @@ input[type="radio"]:disabled + label {
     padding: 0.25rem 1rem;
   }
   .contact-btn {
-    padding: 0.25rem 2.5rem;
+    padding: 0.5rem 2.5rem;
     line-height: 100%;
   }
   label {
@@ -794,7 +800,7 @@ input[type="radio"]:disabled + label {
   .poster,
   .services,
   .footer {
-    padding: 6rem 6rem;
+    padding: 2.5rem 6rem;
     width: 1440px;
     margin: 0 auto;
   }
@@ -806,7 +812,7 @@ input[type="radio"]:disabled + label {
     padding: 1.25rem 0 0;
   }
   .poster-items__item--heder {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .poster-items__item--description {
     margin-top: 0.5rem;

@@ -12,7 +12,7 @@ const background = {
     description: 'Доставим груз из любой точки мира',
     img: "img/A4-r.png",
     link: "#321",
-    width: "60%",
+    width: "55%",
     top: "4vw",
   },
   sea: {
@@ -28,7 +28,7 @@ const background = {
     description: 'Доставим груз из любой точки мира',
     img: "img/A6.png",
     link: "#789",
-    width: "60%",
+    width: "55%",
     top: "5vw",
   },
 
@@ -49,12 +49,12 @@ const infoBtn = document.querySelector(".info-btn");
 const infoTitle = document.querySelector('.info-header')
 const infoDescription = document.querySelector('.info-description')
 
-infoBtn.href = `${background.avto.link}`;
-infoImg.src = `./${background.avto.img}`;
-infoImg.style.width = `${background.avto.width}`;
-infoImg.style.top = `${background.avto.top}`;
-infoTitle.textContent=`${background.avto.title}`
-infoDescription.textContent=`${background.avto.description}`
+infoBtn.href = `${background.import.link}`;
+infoImg.src = `./${background.import.img}`;
+infoImg.style.width = `${background.import.width}`;
+infoImg.style.top = `${background.import.top}`;
+infoTitle.textContent=`${background.import.title}`
+infoDescription.textContent=`${background.import.description}`
 
 for (let el of switcher) {
   el.addEventListener("change", () => {
@@ -84,9 +84,3 @@ for (let el of menuBtn) {
       : null;
   });
 }
-
-// $(".varrad").change(function () {
-//   if ($(this).prop("checked"))
-//     $(this).next(".variant").children(".vvar").text("Правильный");
-//   else $(this).next(".variant").children(".vvar").text("Вариант");
-// });

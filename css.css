@@ -461,6 +461,13 @@ input[type="radio"]:disabled + label {
   line-height: 140%;
   width: fit-content;
 }
+
+.contacts-group__item--mail,
+.contacts-group__item--phone {
+  
+    transition-duration: 0.3s;
+  
+}
 .contacts-group__item--mail:hover,
 .contacts-group__item--phone:hover {
   

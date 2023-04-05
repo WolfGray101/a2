@@ -464,7 +464,7 @@ input[type="radio"]:disabled + label {
 
 .contacts-group__item--mail,
 .contacts-group__item--phone {
-  
+  font-weight: 500;
     transition-duration: 0.3s;
   
 }

@@ -1028,4 +1028,23 @@ z-index: 100000;
   .form-btn:hover {
     box-shadow: 0 0 0.8rem 0.05rem #f8f8f8;
   }
+
+  .modal-auto__description {
+    margin-top: 2.5rem;
+    border-right: 4px #f8f8f8 solid;
+    padding: 0 2.5rem 0 0 ;
+  }
+  .modal-auto__description p {
+    line-height: 120%;
+    margin: .75rem 0;
+  }
+  .modal-auto__description h3 {
+    margin: 1rem 0;
+  }
+  .modal-auto__header {
+    margin: 0;
+    font-size: 2.5rem ;
+    color: #f24343;
+    font-weight: 600;
+  }
 }

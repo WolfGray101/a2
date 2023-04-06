@@ -49,7 +49,8 @@ const infoBtn = document.querySelector(".info-btn");
 const infoTitle = document.querySelector('.info-header')
 const infoDescription = document.querySelector('.info-description')
 const modal = document.querySelector('.modal-auto')
-const cards = document.querySelectorAll('.services-container__card')
+const auto = document.querySelector('.services-container__card--international__open-modal')
+const avia = document.querySelector('.services-container__card--avia__link-avia')
 const close = document.querySelector('.close')
 
 infoBtn.href = `${background.import.link}`;
@@ -59,13 +60,14 @@ infoImg.style.top = `${background.import.top}`;
 infoTitle.textContent=`${background.import.title}`
 infoDescription.textContent=`${background.import.description}`
 
-for (let el of cards) {
-  el.addEventListener('click', () => {
+  auto.addEventListener('click', () => {
     modal.classList.add('modal-auto__open')
     document.body.classList.add('body-fixed')  
     document.querySelector('.modal-auto__container').style.display='flex'
   })
-}
+
+  avia.addEventListener('click', () => location.href='avia.html')
+
 close.addEventListener('click', () => {
     document.body.classList.remove('body-fixed')  
   modal.classList.remove('modal-auto__open')

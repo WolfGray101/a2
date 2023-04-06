@@ -48,6 +48,9 @@ const switcher = document.querySelectorAll("input[type=radio]");
 const infoBtn = document.querySelector(".info-btn");
 const infoTitle = document.querySelector('.info-header')
 const infoDescription = document.querySelector('.info-description')
+const modal = document.querySelector('.modal-auto')
+const cards = document.querySelectorAll('.services-container__card')
+const close = document.querySelector('.close')
 
 infoBtn.href = `${background.import.link}`;
 infoImg.src = `./${background.import.img}`;
@@ -55,6 +58,20 @@ infoImg.style.width = `${background.import.width}`;
 infoImg.style.top = `${background.import.top}`;
 infoTitle.textContent=`${background.import.title}`
 infoDescription.textContent=`${background.import.description}`
+
+for (let el of cards) {
+  el.addEventListener('click', () => {
+    modal.classList.add('modal-auto__open')
+    document.body.classList.add('body-fixed')  
+    document.querySelector('.modal-auto__container').style.display='flex'
+  })
+}
+close.addEventListener('click', () => {
+    document.body.classList.remove('body-fixed')  
+  modal.classList.remove('modal-auto__open')
+  document.querySelector('.modal-auto__container').style.display='none'
+
+})
 
 for (let el of switcher) {
   el.addEventListener("change", () => {

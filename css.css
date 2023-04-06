@@ -523,6 +523,78 @@ input[type="radio"]:disabled + label {
   transition-duration: 0.3s;
 }
 
+.modal-auto {
+
+  position: absolute;
+  left: -9999px;
+  z-index: -1000;
+  margin: 0 auto;
+  border: #f24343 2px solid;
+  border-radius: 2rem;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+.modal-auto__container {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  padding: 2rem;
+  left: 30%;
+  transform: translate(-50%);
+  width: 60%;
+  height: 90%;
+  overflow-x: hidden;
+overflow-y: auto;
+z-index: 100000;
+
+
+}
+.modal-auto__open {
+  position: fixed;
+  display: flex;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  transition-duration: .3s;
+  z-index: 10000;
+  padding: 2rem;
+  background: rgb(248, 248, 248, 0.95)
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  font-size: 4rem;
+  font-weight: 500;
+  transform: rotate(-45deg);
+  padding: 1rem;
+  cursor: pointer;
+}
+.body-fixed {
+  overflow: hidden;
+  z-index: 9999;
+}
+.modal-auto__img {
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+  width: 30%;
+  height: 30%;
+  background-repeat: no-repeat;
+  background-size: contain !important;
+}
+.modal-auto__header {
+
+}
+.modal-auto__description{
+
+}
 @media screen and (min-width: 1120px) and (max-width: 1440px) {
   .navigate {
     padding: 1vw 6vw;

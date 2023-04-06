@@ -373,6 +373,8 @@ input[type="radio"]:disabled + label {
   background-size: 19%;
   background-position: center bottom 21%;
 }
+
+
 .services-container__card {
   padding: 3vw 5vw 13vw;
   background-repeat: no-repeat;
@@ -1000,11 +1002,19 @@ z-index: 100000;
     background-size: 19%;
     background-position: center bottom 21%;
   }
+
   .services-container__card {
     padding: .75rem 2rem 7rem;
     width: calc(50% - 1rem);
     border-radius: 2rem;
   }
+  .services-container__card--owner {
+    width: 100%;
+    padding: .75rem 2rem;
+    }
+    .services-container__card--owner h3 {
+      font-weight: 700;
+    }
   .card-title {
     font-size: 1rem;
     text-align: center;

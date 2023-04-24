@@ -869,6 +869,7 @@ z-index: 100000;
     background-size: 60vw;
     background-position: top -2vw right 3vw;
     padding: 5vw 0 13vw;
+    width: 60vw;
     margin: 0 6vw;
   }
   .info-container__img {
@@ -886,7 +887,15 @@ z-index: 100000;
     margin-bottom: 3vw;
     font-size: 1.65vw;
     line-height: 1.75vw;
-    width: 25vw;
+    width: 25vw; 
+     padding: 0 2.5vw 0 0 ;
+  }
+  p {
+    line-height: 120%;
+    margin: .75vw 0;
+  }
+  h3 {
+    margin: 1vw 0;
   }
   .info-btn {
     padding: 1vw 4vw;
@@ -908,7 +917,9 @@ z-index: 100000;
     margin-top: 0.5vw;
   }
   .services {
-    padding: 6vw 6vw 2vw 6vw;
+    padding: 2.5vw 6vw 2.5vw 2vw;
+    width: 40%;
+
   }
   .services-container {
     row-gap: 2vw;
@@ -955,7 +966,7 @@ z-index: 100000;
     background-position: center bottom 20%;
   }
   .services-container__card--multimodal::before {
-    background-position: top 33% left 15%;
+    background-position: top 50% left 15%;
     background-size: 20%;
   }
   .services-container__card--multimodal:hover::before {
@@ -995,12 +1006,12 @@ z-index: 100000;
     background-position: center bottom 21%;
   }
   .services-container__card {
-    padding: 3vw 5vw 13vw;
-    width: 45%;
+    padding: .75vw 2vw 7vw;
+    width: calc(50% - 1vw);
     border-radius: 2vw;
   }
   .card-title {
-    font-size: 2vw;
+    font-size: 1vw;
   }
   .services-container__card--active .card-title {
     font-size: 2vw;

@@ -12,13 +12,13 @@
       <header class="navigate">
 
         <div class="menu-group">
-          <a class="btn" href="#about">О нас</a>
+          <a class="btn" href="https://a2logistics.ru#about">О нас</a>
 
-          <a class="btn" href="#services">Услуги</a>
+          <a class="btn" href="https://a2logistics.ru#services">Услуги</a>
 
-          <a class="btn" href="#">Вакансии</a>
+          <a class="btn" href="https://a2logistics.ru/jobs">Вакансии</a>
 
-          <a class="btn" href="#">Подрядчикам</a>
+          <a class="btn" href="https://a2logistics.ru/partners">Подрядчикам</a>
          
         </div>
 
@@ -31,19 +31,19 @@
             >
             <div class="contacts-group__social">
               <a
-                href="viber://chat?number=%2B375295565486"
+                href="viber://chat?number=%2B375447435518"
                 class="contact-group__social-item"
               >
                 <img src="./img/icon/viber.png" alt=""
               /></a>
               <a
-                href="https://t.me/unscropul0us"
+                href="https://t.me/a2logisticsru"
                 class="contact-group__social-item"
               >
                 <img src="./img/icon/telegram.png" alt=""
               /></a>
               <a
-                href="https://wa.me/375295565486"
+                href="https://wa.me/79686113177"
                 class="contact-group__social-item"
               >
                 <img src="./img/icon/whatsapp.png" alt=""
@@ -197,32 +197,44 @@
     <div class="footer-container" id="footer">
       <footer class="footer">
         <div class="footer-headers">
-          <a href="index.html"><div class="footer-headers__logo"></div></a>
+          <div class="footer-headers__logo"></div>
           <h2 class="footer-headers__form-header">
             Оставьте ваши контакты и мы с вами свяжемся
           </h2>
         </div>
         <div class="footer-items">
           <div class="footer-item">
-            <a href="" class="footer-item__map">О нас</a>
-            <a href="" class="footer-item__map">Услуги</a>
-            <a href="" class="footer-item__map">Вакансии</a>
-            <a href="" class="footer-item__map">Подрядчикам</a>
+            <a href="https://a2logistics.ru#about" class="footer-item__map">О нас</a>
+            <a href="https://a2logistics.ru#services" class="footer-item__map">Услуги</a>
+            <a href="https://a2logistics.ru/jobs" class="footer-item__map">Вакансии</a>
+            <a href="https://a2logistics.ru/partner" class="footer-item__map">Подрядчикам</a>
           </div>
           <div class="footer-item">
+            <div class="footer-headers__logo footer-headers__logo--sm"></div>
             <h3 class="footer-item__header">Контакты:</h3>
-            <a href="" class="footer-item__phone">+7 495 152 05 54</a>
-            <a href="" class="footer-item__email">info@a2logistics.ru</a>
+            <a href="tel:+74951520554" class="footer-item__phone">+7 495 152 05 54</a>
+            <a href="mailto:info@a2logistics.ru"  class="footer-item__email">info@a2logistics.ru</a>
           </div>
-          <form class="footer-item__form">
-            <label for="">
-              <input type="text" placeholder="Имя" />
+          <form class="rd-mailform footer-item__form" method="post" action="send.php" >
+            <label for="" class="form-label">
+              <input
+                type="text"
+                placeholder="Имя"
+                type="text"
+                name="name"
+                data-constraints="@NotEmpty @LettersOnly"
+              />
             </label>
-            <label for="">
-              <input type="text" placeholder="+ 375 (29) --- -- --" />
+            <label for="" class="form-label">
+              <input
+                type="text"
+                placeholder="375 (29) --- -- --"
+                name="phone"
+                data-constraints="@NotEmpty @NumbersOnly"
+              />
             </label>
-            <label for="">
-              <input type="text" placeholder="E-mail" />
+            <label for="" class="form-label">
+              <input type="text" placeholder="E-mail"  name="text"/>
             </label>
             <label for="privacy">
               <input type="checkbox" id="privacy" />
@@ -230,7 +242,21 @@
             </label>
 
             <button class="button form-btn">ОСТАВИТЬ ЗАЯВКУ</button>
+            <div class="mfInfo"></div>
+
           </form>
+          <script>
+            (function ($) {
+              var o = $(".rd-mailform");
+              if (o.length > 0) {
+                $(document).ready(function () {
+                  if (o.length) {
+                    o.rdMailForm();
+                  }
+                });
+              }
+            })(jQuery);
+          </script>
         </div>
       </footer>
     </div>

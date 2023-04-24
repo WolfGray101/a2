@@ -1,4 +1,4 @@
-const background = {
+const backgroundd = {
   avia: {
     title: 'Авиаперевозки',
     description: 'Доставим груз из любой точки мира',
@@ -50,35 +50,34 @@ const infoTitle = document.querySelector('.info-header')
 const infoDescription = document.querySelector('.info-description')
 const modal = document.querySelector('.modal-auto')
 const auto = document.querySelector('.services-container__card--international__open-modal')
-const avia = document.querySelector('.services-container__card--avia__link-avia')
 const close = document.querySelector('.close')
 
-infoBtn.href = `${background.import.link}`;
-infoImg.src = `./${background.import.img}`;
-infoImg.style.width = `${background.import.width}`;
-infoImg.style.top = `${background.import.top}`;
-infoTitle.textContent=`${background.import.title}`
-infoDescription.textContent=`${background.import.description}`
+infoBtn.href = `${backgroundd.import.link}`;
+infoImg.src = `./${backgroundd.import.img}`;
+infoImg.style.width = `${backgroundd.import.width}`;
+infoImg.style.top = `${backgroundd.import.top}`;
+infoTitle.textContent=`${backgroundd.import.title}`
+infoDescription.textContent=`${backgroundd.import.description}`
 
-  auto.addEventListener('click', () => {
-    modal.classList.add('modal-auto__open')
-    document.body.classList.add('body-fixed')  
-    document.querySelector('.modal-auto__container').style.display='flex'
-  })
+//   auto.addEventListener('click', () => {
+//     modal.classList.add('modal-auto__open')
+//     document.body.classList.add('body-fixed')  
+//     document.querySelector('.modal-auto__container').style.display='flex'
+//   })
 
-  avia.addEventListener('click', () => location.href='avia.html')
 
-close.addEventListener('click', () => {
-    document.body.classList.remove('body-fixed')  
-  modal.classList.remove('modal-auto__open')
-  document.querySelector('.modal-auto__container').style.display='none'
 
-})
+// close.addEventListener('click', () => {
+//     document.body.classList.remove('body-fixed')  
+//   modal.classList.remove('modal-auto__open')
+//   document.querySelector('.modal-auto__container').style.display='none'
+
+// })
 
 for (let el of switcher) {
   el.addEventListener("change", () => {
 
-    const body = background[el.id];
+    const body = backgroundd[el.id];
     infoImg.src = `./${body.img}`;
     infoImg.style.width = `${body.width}`;
     infoImg.style.top = `${body.top}`;

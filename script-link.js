@@ -11,4 +11,4 @@ document.querySelector('.services-container__card--avia__link-multimodal').addEv
 document.querySelector('.services-container__card--avia__link-project').addEventListener('click', () => location.href='project.html')
 document.querySelector('.services-container__card--avia__link-stock').addEventListener('click', () => location.href='stock.html')
 document.querySelector('.services-container__card--avia__link-insurance').addEventListener('click', () => location.href='insurance.html')
-document.querySelector('.services-container__card--avia__link-customs').addEventListener('click', () => location.href='custom.html')
+document.querySelector('.services-container__card--avia__link-custom').addEventListener('click', () => location.href='custom.html')

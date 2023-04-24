@@ -629,7 +629,7 @@ z-index: 100000;
   .info-container {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1rem;
     text-align: center;
     align-items: center;
     padding: 0;
@@ -637,10 +637,19 @@ z-index: 100000;
   .info-container__description {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1rem;
     text-align: left;
+    font-size: .75rem;
     /* align-items: center; */
   }
+  .info-container__description p,
+  .info-container__description ul {
+    font-size: .75rem;
+  }
+  .info-container__description h3 {
+    font-size: 1.25rem;
+  }
+
   .info-container__img {
     order: -1;
     position: relative;
@@ -681,7 +690,7 @@ z-index: 100000;
     font-size: .75rem;
   }
   .services__header{
-    font-size: 1.3rem ;
+    font-size: 1.5rem ;
     width: 100%;
     margin-bottom: 1rem;
   }

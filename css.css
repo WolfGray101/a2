@@ -1187,6 +1187,7 @@ input[type="radio"]:disabled + label {
   .footer-item__form {
     width: 30vw;
     gap: 1vw;
+    margin: 0;
   }
   .footer-item__form input[type="text"] {
     padding: 1vw 2vw 1vw;

@@ -104,22 +104,40 @@
       </header>
     </div>
     <main class="main">
-      <div class="main-nav">
-        <input id="import" type="radio" name="radio" value="import" checked />
-        <label for="import"> Услуга «Импорт 70» </label>
-
-        <input id="avia" type="radio" name="radio" value="avia" />
-        <label for="avia">Авиаперевозки</label>
-
-        <input id="sea" type="radio" name="radio" value="sea" />
-        <label for="sea">Морские перевозки</label>
-        <input id="avto" type="radio" name="radio" value="avto" />
+ <div thumbsSlider="" class="swiper mySwiper main-nav">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <input
+              id="import"
+              type="radio"
+              name="radio"
+              value="import"
+              checked
+            />
+            <label for="import"> Услуга «Импорт 70» </label>
+          </div>
+          <div class="swiper-slide">
+            <input id="avia" type="radio" name="radio" value="avia" />
+            <label for="avia">Авиаперевозки</label>
+          </div>
+          <div class="swiper-slide">
+            <input id="sea" type="radio" name="radio" value="sea" />
+            <label for="sea">Морские перевозки</label>
+          </div>
+          <div class="swiper-slide">
+            <input id="avto" type="radio" name="radio" value="avto" />
         <label for="avto">Автомобильные перевозки</label>
-
-        <input id="train" type="radio" name="radio" value="train" />
-        <label for="train">Железнодорожные перевозки</label>
+          </div>
+          <div class="swiper-slide">
+            <input id="train" type="radio" name="radio" value="train" />
+            <label for="train">Железнодорожные перевозки</label>
+          </div>
+        </div>
       </div>
-      <div class="swiper" >
+      <div
+        style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+        class="swiper mySwiper2"
+      >
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="info-container">
@@ -133,7 +151,6 @@
               />
             </div>
           </div>
-
           <div class="swiper-slide">
             <div class="info-container">
               <h1 class="headers info-header">Авиаперевозки</h1>
@@ -146,7 +163,6 @@
               />
             </div>
           </div>
-
           <div class="swiper-slide">
             <div class="info-container">
               <h1 class="headers info-header">Морские перевозки</h1>
@@ -159,7 +175,6 @@
               />
             </div>
           </div>
-
           <div class="swiper-slide">
             <div class="info-container">
               <h1 class="headers info-header">Автомобильные перевозки</h1>
@@ -185,44 +200,13 @@
             </div>
           </div>
         </div>
-
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
       </div>
-      <!-- <div class="radio-button-swiper swiper" slides-per-view="4" free-mode="true"
-      watch-slides-progress="true">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-           
-              <p>Подробнее1</p>
-       
-          </div>
+  
 
-          <div class="swiper-slide">
-       
-              <p>Подробне2е</p>
-       
-          </div>
-
-          <div class="swiper-slide">
-    
-              <p>Подробнее3</pa>
-
-          </div>
-
-          <div class="swiper-slide">
-            
-              <p>Подробнее4</p>
-            
-          </div>
-          <div class="swiper-slide">
-         
-              <p>Подробнее5</p>
-     
-          </div>
-        </div>
-      </div> -->
       <div class="poster-container" id="about">
         <div class="poster">
           <h2 class="headers poster-header">

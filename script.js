@@ -42,22 +42,22 @@
 //     right: '4rem'
 //   },
 // };
-
-const infoImg = document.querySelector(".info-container__img");
+const infoContainer  = document.querySelectorAll('.info-container')
+// const infoImg = document.querySelector(".info-container__img");
 const switcher = document.querySelectorAll("input[type=radio]");
-const infoBtn = document.querySelector(".info-btn");
-const infoTitle = document.querySelector('.info-header')
-const infoDescription = document.querySelector('.info-description')
-const modal = document.querySelector('.modal-auto')
-const auto = document.querySelector('.services-container__card--international__open-modal')
-const close = document.querySelector('.close')
+// const infoBtn = document.querySelector(".info-btn");
+// const infoTitle = document.querySelector('.info-header')
+// const infoDescription = document.querySelector('.info-description')
+// const modal = document.querySelector('.modal-auto')
+// const auto = document.querySelector('.services-container__card--international__open-modal')
+// const close = document.querySelector('.close')
 
-infoBtn.href = `${backgroundd.import.link}`;
-infoImg.src = `./${backgroundd.import.img}`;
-infoImg.style.width = `${backgroundd.import.width}`;
-infoImg.style.top = `${backgroundd.import.top}`;
-infoTitle.textContent=`${backgroundd.import.title}`
-infoDescription.textContent=`${backgroundd.import.description}`
+// infoBtn.href = `${backgroundd.import.link}`;
+// infoImg.src = `./${backgroundd.import.img}`;
+// infoImg.style.width = `${backgroundd.import.width}`;
+// infoImg.style.top = `${backgroundd.import.top}`;
+// infoTitle.textContent=`${backgroundd.import.title}`
+// infoDescription.textContent=`${backgroundd.import.description}`
 
 //   auto.addEventListener('click', () => {
 //     modal.classList.add('modal-auto__open')
@@ -74,20 +74,26 @@ infoDescription.textContent=`${backgroundd.import.description}`
 
 // })
 
+// for (let el of switcher) {
+//   el.addEventListener("change", () => {
+
+//     const body = backgroundd[el.id];
+//     infoImg.src = `./${body.img}`;
+//     infoImg.style.width = `${body.width}`;
+//     infoImg.style.top = `${body.top}`;
+//     infoBtn.href = `${body.link}`;
+//     console.log(body.right);
+//     body.right? 
+//     infoImg.style.right = `${body.right}`:
+//     infoImg.style.right = 0;
+//     infoTitle.textContent=`${body.title}`
+//     infoDescription.textContent=`${body.description}`
+//   });
+// }
+
 for (let el of switcher) {
   el.addEventListener("change", () => {
-
-    const body = backgroundd[el.id];
-    infoImg.src = `./${body.img}`;
-    infoImg.style.width = `${body.width}`;
-    infoImg.style.top = `${body.top}`;
-    infoBtn.href = `${body.link}`;
-    console.log(body.right);
-    body.right? 
-    infoImg.style.right = `${body.right}`:
-    infoImg.style.right = 0;
-    infoTitle.textContent=`${body.title}`
-    infoDescription.textContent=`${body.description}`
+console.log(el);
   });
 }
 

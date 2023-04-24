@@ -1,47 +1,47 @@
-const backgroundd = {
-  avia: {
-    title: 'Авиаперевозки',
-    description: 'Доставим груз из любой точки мира',
-    img: "./img/A3.png",
-    link: "#123",
-    width: "75%",
-    top: "-2vw",
-  },
-  avto: {
-    title: 'Автомобильные перевозки',
-    description: 'Доставим груз из любой точки мира',
-    img: "img/A4-r.png",
-    link: "#321",
-    width: "55%",
-    top: "4vw",
-  },
-  sea: {
-    title: 'Морские перевозки',
-    description: 'Доставим груз из любой точки мира',
-    img: "img/A2.png",
-    link: "#456",
-    width: "65%",
-    top: "3vw",
-  },
-  train: {
-    title: 'Железнодорожные перевозки',
-    description: 'Доставим груз из любой точки мира',
-    img: "img/A6.png",
-    link: "#789",
-    width: "55%",
-    top: "5vw",
-  },
+// const backgroundd = {
+//   avia: {
+//     title: 'Авиаперевозки',
+//     description: 'Доставим груз из любой точки мира',
+//     img: "./img/A3.png",
+//     link: "#123",
+//     width: "75%",
+//     top: "-2vw",
+//   },
+//   avto: {
+//     title: 'Автомобильные перевозки',
+//     description: 'Доставим груз из любой точки мира',
+//     img: "img/A4-r.png",
+//     link: "#321",
+//     width: "55%",
+//     top: "4vw",
+//   },
+//   sea: {
+//     title: 'Морские перевозки',
+//     description: 'Доставим груз из любой точки мира',
+//     img: "img/A2.png",
+//     link: "#456",
+//     width: "65%",
+//     top: "3vw",
+//   },
+//   train: {
+//     title: 'Железнодорожные перевозки',
+//     description: 'Доставим груз из любой точки мира',
+//     img: "img/A6.png",
+//     link: "#789",
+//     width: "55%",
+//     top: "5vw",
+//   },
 
-  import: {
-    title: 'Услуга «Импорт 70»',
-    description: 'Оформим  груз из любой точки мира',
-    img: "img/A10-r.png",
-    link: "#987",
-    width: "45%",
-    top: "2vw",
-    right: '4rem'
-  },
-};
+//   import: {
+//     title: 'Услуга «Импорт 70»',
+//     description: 'Оформим  груз из любой точки мира',
+//     img: "img/A10-r.png",
+//     link: "#987",
+//     width: "45%",
+//     top: "2vw",
+//     right: '4rem'
+//   },
+// };
 
 const infoImg = document.querySelector(".info-container__img");
 const switcher = document.querySelectorAll("input[type=radio]");

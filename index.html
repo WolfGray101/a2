@@ -9,6 +9,11 @@
       rel="icon"
       href="https://a2logistics.ru/favicon.ico"
       type="image/x-icon">
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  
     <link rel="stylesheet" href="./rd-mailform.css" />
     <link rel="stylesheet" href="css.css" />
 
@@ -26,7 +31,6 @@
     type="text/css"
     href="font-awesome-4.7.0/css/fonts.css"
   />
-
   </head>
   <body>
     <!-- <div class="modal-container">
@@ -116,12 +120,72 @@
         <input id="train" type="radio" name="radio" value="train" />
         <label for="train">Железнодорожные перевозки</label>
       </div>
-      <div class="info-container">
-        <h1 class="headers info-header"></h1>
-        <p class="info-description"></p>
-        <a href="#services" class="btn info-btn">Подробнее</a>
-        <img class="info-container__img" alt="" />
-      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+      
+         <div class="swiper-slide">
+
+        <div class="info-container">
+        <h1 class="headers info-header">Услуга «Импорт 70</h1>
+        <p class="info-description">Оформим  груз из любой точки мира</p>
+        <a href="custom.html" class="btn info-btn">Подробнее</a>
+        <img class="info-container__img info-container__img--import"  src="img/A10-r.png" alt="" />
+        </div>
+
+        </div>
+
+        <div class="swiper-slide">
+
+          <div class="info-container">
+          <h1 class="headers info-header">Авиаперевозки</h1>
+          <p class="info-description">Доставим груз из любой точки мира</p>
+          <a href="avia.html" class="btn info-btn">Подробнее</a>
+          <img class="info-container__img info-container__img--avia"  src="img/A3.png" alt="" />
+          </div>
+  
+          </div>
+
+          <div class="swiper-slide">
+
+            <div class="info-container">
+            <h1 class="headers info-header">Морские перевозки</h1>
+            <p class="info-description">Доставим груз из любой точки мира</p>
+            <a href="sea.html" class="btn info-btn">Подробнее</a>
+            <img class="info-container__img info-container__img--sea"  src="img/A2.png" alt="" />
+            </div>
+    
+            </div>
+
+            <div class="swiper-slide">
+
+              <div class="info-container">
+              <h1 class="headers info-header">Автомобильные перевозки</h1>
+              <p class="info-description">Оформим  груз из любой точки мира</p>
+              <a href="auto.html" class="btn info-btn">Подробнее</a>
+              <img class="info-container__img info-container__img--avto"  src="img/A4-r.png" alt="" />
+              </div>
+      
+              </div>
+              <div class="swiper-slide">
+
+                <div class="info-container">
+                <h1 class="headers info-header">Железнодорожные перевозки</h1>
+                <p class="info-description">Оформим  груз из любой точки мира</p>
+                <a href="train.html" class="btn info-btn">Подробнее</a>
+                <img class="info-container__img info-container__img--train"  src="img/A6.png" alt="" />
+                </div>
+        
+                </div>
+
+            
+   
+        </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
       <div class="poster-container" id="about">
         <div class="poster">
           <h2 class="headers poster-header">
@@ -267,6 +331,9 @@
     <script src="script.js"></script>
     <script src="script-link.js"></script>
   <script src="modal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="swiper.js"></script>
+
 
   </body>
 </html>

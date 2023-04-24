@@ -688,7 +688,7 @@ input[type="radio"]:disabled + label {
   }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    top: 1rem;
+    bottom: 2rem;
   }
   .info-header {
     font-size: 1.75rem;

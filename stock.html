@@ -4,13 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A2</title>
+    <title>A2logistics</title>
+    <link
+      rel="icon"
+      href="https://a2logistics.ru/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./rd-mailform.css" />
+    <link rel="stylesheet" href="css.css" />
     <link rel="stylesheet" href="avia.css" />
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.form.min.js"></script>
+    <script type="text/javascript" src="js/jquery.rd-mailform.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="font-awesome-4.7.0/css/fonts.css"
+    />
   </head>
   <body>
     <div class="header-container">
       <header class="navigate">
-
         <div class="menu-group">
           <a class="btn" href="https://a2logistics.ru#about">О нас</a>
 
@@ -19,7 +40,6 @@
           <a class="btn" href="https://a2logistics.ru/jobs">Карьера</a>
 
           <a class="btn" href="https://a2logistics.ru/partners">Подрядчикам</a>
-         
         </div>
 
         <div class="contacts-group">
@@ -66,86 +86,66 @@
         </div>
       </header>
     </div>
-   <main class="main">
+    <main class="main">
       <div class="info-container">
-        <h2 class="headers services__header">Автомобильные перевозки</h2>
+        <h2 class="headers services__header">Складской сервис</h2>
         <div class="info-container__description">
           <p>
-            Компания А2 Логистика на профессиональном уровне занимается
-            организацией международных автомобильных перевозок и оказывает
-            услуги по доставке FTL (комплектных) и LTL (сборных) грузов из стран
-            Европы в Россию, Беларусь, Казахстан, Армению, Азербайджан,
-            Туркменистан. Работаем с любыми объемами, типами грузов, гарантируем
-            выгодные условия сотрудничества. При наличии у клиента постоянного
-            объема фиксируем ставки на согласованный период.
+            Современный складской сервис помимо непосредственного хранения
+            предполагает полный комплекс сопутствующих услуг применимых к грузу,
+            товару, материалам и оборудованию (маркировка, инвентаризация,
+            иное). Опытнейшие специалисты А2 Логистика помогут выбрать
+            подходящий склад, оформить безопасное хранение груза, подготовить
+            его для последующей отправки, оптимизировать логистические затраты и
+            окажут всю необходимую помощь.
           </p>
+
+          <h3>Услуги складского хранения</h3>
+          <p>Наша компания оказывает следующий перечень складских услуг:</p>
+          <ul>
+            <li>погрузка/разгрузка</li>
+            <li>
+              маркировка EAC, «честный знак», определенные типы продукции
+              (алкоголь, шины, обувь, прочее)
+            </li>
+            <li>консолидация грузов (небольшие партии)</li>
+            <li>упаковка и переупаковка товара</li>
+            <li>
+              мониторинг и инвентаризация (устранение неточностей в
+              классификации, выверенность, учет)
+            </li>
+            <li>подготовка документации</li>
+            <li>страхование</li>
+          </ul>
           <p>
-            Среди ключевых преимуществ нашей компании: забор груза и его
-            доставка точно в срок по оптимальной цене, а также безопасность
-            перевозки. Наш показатель DIFOT («Delivered in full on time» -
-            доставлено в полном объеме в срок) составляет 99%, но мы всегда
-            стремимся к 100%.
+            Нанесение акцизных марок (маркировка груза) позволяет владельцу
+            рассчитывать на ускоренную промежуточную обработку и подготовку
+            груза к продаже – сразу после его доставки в пункт назначения.
+            Наличие этикеток, стикеров и маркеров является обязательным
+            требованием законодательства. Обеспечиваем соблюдение
+            соответствующих критериев профильных норм и стандартов. Эти и прочие
+            услуги входят в стоимость по складскому хранению. За детальным
+            просчетом обращайтесь к нашим менеджерам.
           </p>
-          <h3>Проработка маршрутов и логистических цепочек</h3>
+          <h3>Оптимальная складская логистика</h3>
           <p>
-            Услуга автомобильных перевозок характеризуется своей
-            универсальностью, доступностью и оптимальной ценой. Профильная
-            специализация нашей компании обозначается в следующих аспектах:
+            Транспортные складские услуги, оказываемые компанией А2 Логистика –
+            безусловная уверенность клиента в бесперебойном импорте и экспорте.
+            Гарантируем высокоуровневый сервис складского хранения и оптимизацию
+            логистических затрат заказчика в полном соответствии с
+            предъявляемыми требованиями законодательства. Высокий стандарт
+            профильных услуг предполагает:
           </p>
           <ul>
-            <li>
-              только проверенные перевозчики (CMR – страхование, покрывающее
-              стоимость груза, не менее 3 отзывов, договор)
-            </li>
-            <li>
-              перевозчики c различной регистрацией (ЕС: Польша, Литва, Чехия;
-              СНГ: Россия, Беларусь, Армения, Казахстан, Узбекистан; другие
-              страны)
-            </li>
-            <li>
-              оказываем услуги по доставке сборных грузов с консолидацией в
-              Польше и Литве
-            </li>
-            <li>взаимодействие только с владельцами транспорта</li>
+            <li>безопасное хранение груза</li>
+            <li>любые объемы и сроки</li>
+            <li>комплексные сопутствующие услуги</li>
+            <li>оперативное складирование (даже в пиковые периоды)</li>
+            <li>выбор складских помещений (разного класса: A-D)</li>
           </ul>
-          <h3>Комплексные решения</h3>
-          Деятельность нашей компании существенно отличается от многочисленных
-          сторонних посредников. Предлагаем клиенту комплексные решения:
-          предоставление транспорта, организация перевозки, переупаковка груза в
-          пути, маркировка товара надежными способами, контроль груза в пути,
-          закупка товара в ЕС. Все грузы страхуются по выгодным тарифам.
-          <p>Как мы можем доставить ваш груз автомобильным транспортом</p>
-          <p>Предлагаем следующие варианты доставки комплектных грузов:</p>
-          <ul>
-            <li>с перецепкой без перегрузки</li>
-            <li>с одной перегрузкой</li>
-            <li>с двумя перегрузками</li>
-            <li>прямое авто минуя территорию Беларуси</li>
-            <li>с дополнительной опцией - два водителя</li>
-          </ul>
-          <h3>Автомобильная перевозка опасных грузов и прочие услуги</h3>
           <p>
-            Занимаемся организацией нестандартных автомобильных перевозок, в том
-            числе опасных, ветеринарных, температурных, ценных, фитосанитарных
-            грузов. Компетенция наших специалистов позволяет выполнить надежное
-            перемещение нетипичного груза на самые дальние расстояния. С учетом
-            всех действующих стандартов и требований безопасности.
-          </p>
-          <h3>Успешное решение всех вопросов</h3>
-          <p>
-            Санкционная политика может вносить значимые коррективы в цепочку
-            международных автомобильных перевозок. Благодаря отлаженным
-            партнерским отношениям оперативно регулируем возникающие вопросы с
-            выбором оптимального логистического маршрута. Для большего удобства
-            предусмотрено выделение одного аккаунт менеджера для всех
-            направлений перевозок определенного клиента. Выход на высшее
-            руководство позволяет своевременно урегулировать любые возникающие
-            ситуации.
-          </p>
-          <p>
-            Перевозка автомобильным транспортиром посредством компании
-            A2logistics – это безусловная гарантия качественно оказанной услуги
-            с доставкой груза в назначенное место в оговоренный срок.
+            Будьте уверены в надежном хранении и быстрой обработке своих грузов
+            (территория стран ЕАЭС, стран Евросоюза, иных стран).
           </p>
         </div>
       </div>
@@ -158,13 +158,19 @@
           >
             <h3 class="card-title">Международные автоперевозки</h3>
           </div>
-          <div class="services-container__card services-container__card--avia services-container__card--avia__link-avia">
+          <div
+            class="services-container__card services-container__card--avia services-container__card--avia__link-avia"
+          >
             <h3 class="card-title">Авиаперевозки</h3>
           </div>
-          <div class="services-container__card services-container__card--train services-container__card--avia__link-train">
+          <div
+            class="services-container__card services-container__card--train services-container__card--avia__link-train"
+          >
             <h3 class="card-title">Железнодорожные перевозки</h3>
           </div>
-          <div class="services-container__card services-container__card--sea services-container__card--avia__link-sea">
+          <div
+            class="services-container__card services-container__card--sea services-container__card--avia__link-sea"
+          >
             <h3 class="card-title">Морские перевозки</h3>
           </div>
           <div
@@ -177,7 +183,9 @@
           >
             <h3 class="card-title">Проектная логистика</h3>
           </div>
-          <div class="services-container__card services-container__card--stock services-container__card--avia__link-stock">
+          <div
+            class="services-container__card services-container__card--stock services-container__card--avia__link-stock"
+          >
             <h3 class="card-title">Складской сервис</h3>
           </div>
           <div
@@ -190,11 +198,9 @@
           >
             <h3 class="card-title">Таможенное оформление</h3>
           </div>
-          <div
-          class="services-container__card services-container__card--owner"
-        >
-          <h3 class="card-title">НА ГЛАВНУЮ</h3>
-        </div>
+          <!-- <div class="services-container__card services-container__card--owner">
+            <h3 class="card-title">НА ГЛАВНУЮ</h3>
+          </div> -->
         </div>
       </div>
     </main>
@@ -208,18 +214,34 @@
         </div>
         <div class="footer-items">
           <div class="footer-item">
-            <a href="https://a2logistics.ru#about" class="footer-item__map">О нас</a>
-            <a href="https://a2logistics.ru#services" class="footer-item__map">Услуги</a>
-            <a href="https://a2logistics.ru/jobs" class="footer-item__map">Вакансии</a>
-            <a href="https://a2logistics.ru/partner" class="footer-item__map">Подрядчикам</a>
+            <a href="https://a2logistics.ru#about" class="footer-item__map"
+              >О нас</a
+            >
+            <a href="https://a2logistics.ru#services" class="footer-item__map"
+              >Услуги</a
+            >
+            <a href="https://a2logistics.ru/jobs" class="footer-item__map"
+              >Вакансии</a
+            >
+            <a href="https://a2logistics.ru/partner" class="footer-item__map"
+              >Подрядчикам</a
+            >
           </div>
           <div class="footer-item">
             <div class="footer-headers__logo footer-headers__logo--sm"></div>
             <h3 class="footer-item__header">Контакты:</h3>
-            <a href="tel:+74951520554" class="footer-item__phone">+7 495 152 05 54</a>
-            <a href="mailto:info@a2logistics.ru"  class="footer-item__email">info@a2logistics.ru</a>
+            <a href="tel:+74951520554" class="footer-item__phone"
+              >+7 495 152 05 54</a
+            >
+            <a href="mailto:info@a2logistics.ru" class="footer-item__email"
+              >info@a2logistics.ru</a
+            >
           </div>
-          <form class="rd-mailform footer-item__form" method="post" action="send.php" >
+          <form
+            class="rd-mailform footer-item__form"
+            method="post"
+            action="send.php"
+          >
             <label for="" class="form-label">
               <input
                 type="text"
@@ -238,7 +260,7 @@
               />
             </label>
             <label for="" class="form-label">
-              <input type="text" placeholder="E-mail"  name="text"/>
+              <input type="text" placeholder="E-mail" name="text" />
             </label>
             <label for="privacy">
               <input type="checkbox" id="privacy" />
@@ -247,7 +269,6 @@
 
             <button class="button form-btn">ОСТАВИТЬ ЗАЯВКУ</button>
             <div class="mfInfo"></div>
-
           </form>
           <script>
             (function ($) {
@@ -266,6 +287,6 @@
     </div>
 
     <script src="script-link.js"></script>
-
+    <script src="modal.js"></script>
   </body>
 </html>

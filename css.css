@@ -166,7 +166,7 @@ input[type="radio"]:disabled + label {
   font-size: 1.1vw;
 }
 .main-nav {
-  display: flex;
+  /* display: flex; */
   gap: 2vw;
   justify-content: center;
   font-family: "Roboto", sans-serif;
@@ -1101,6 +1101,7 @@ input[type="radio"]:disabled + label {
     background-position: top -2vw right 3vw;
     padding: 5vw 0 13vw;
     margin: 0 6vw;
+    width: 100%;
   }
   .info-container__img {
     right: 0vw;

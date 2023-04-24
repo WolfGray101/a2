@@ -10,7 +10,7 @@ const swiper = new Swiper('.swiper', {
     clickable: true,
     dynamicBullets: true,
   },
-
+  slidesPerView: 1,
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
@@ -21,8 +21,15 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+
+  // thumbs : {
+  //   swiper: {
+  //     el: '.radio-button-swiper',
+  //     slidesPerView: 10,
+  //   }
+  // },
   //показываем кусочек следующего слайда
-  slidesPerView: 1,
+  
   //отступ слайдеров
   spaceBetween: 5,
 

@@ -688,7 +688,7 @@ input[type="radio"]:disabled + label {
   }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 8rem;
+    top: 1rem;
   }
   .info-header {
     font-size: 1.75rem;
@@ -914,6 +914,32 @@ input[type="radio"]:disabled + label {
   .info-container__img {
     right: 0vw;
     opacity: 0.75;
+  }
+
+  .info-container__img--import {
+    width: 45%;
+    top: 2vw;
+    right: 4rem;
+  }
+  .info-container__img--sea {
+    width: 65%;
+    top: 3vw;
+  }
+  .info-container__img--avia {
+    width: 75%;
+    top: -2vw
+  }
+  .info-container__img--avto {
+    width: 55%;
+    top:4vw;
+  }
+  .info-container__img--train {
+    width: 55%;
+    top: 5vw;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
   }
   .headers {
     font-size: 3.3vw;
@@ -1149,6 +1175,33 @@ input[type="radio"]:disabled + label {
   .info-btn {
     padding: 1rem 4rem;
   }
+
+  .info-container__img--import {
+    width: 45%;
+    top: 2vw;
+    right: 4rem;
+  }
+  .info-container__img--sea {
+    width: 65%;
+    top: 3vw;
+  }
+  .info-container__img--avia {
+    width: 75%;
+    top: -2vw
+  }
+  .info-container__img--avto {
+    width: 55%;
+    top:4vw;
+  }
+  .info-container__img--train {
+    width: 55%;
+    top: 5vw;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
   .poster,
   .services,
   .footer {

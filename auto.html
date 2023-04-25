@@ -30,9 +30,7 @@
     />
   </head>
   <body>
-    <div class="header-container">
-
-    </div>
+    <div class="header-container"></div>
     <main class="main">
       <div class="info-container">
         <h2 class="headers services__header">Автомобильные перевозки</h2>
@@ -125,13 +123,19 @@
           >
             <h3 class="card-title">Международные автоперевозки</h3>
           </div>
-          <div class="services-container__card services-container__card--avia services-container__card--avia__link-avia">
+          <div
+            class="services-container__card services-container__card--avia services-container__card--avia__link-avia"
+          >
             <h3 class="card-title">Авиаперевозки</h3>
           </div>
-          <div class="services-container__card services-container__card--train services-container__card--avia__link-tarin">
+          <div
+            class="services-container__card services-container__card--train services-container__card--avia__link-tarin"
+          >
             <h3 class="card-title">Железнодорожные перевозки</h3>
           </div>
-          <div class="services-container__card services-container__card--sea services-container__card--avia__link-sea">
+          <div
+            class="services-container__card services-container__card--sea services-container__card--avia__link-sea"
+          >
             <h3 class="card-title">Морские перевозки</h3>
           </div>
           <div
@@ -144,7 +148,9 @@
           >
             <h3 class="card-title">Проектная логистика</h3>
           </div>
-          <div class="services-container__card services-container__card--stock services-container__card--avia__link-stock">
+          <div
+            class="services-container__card services-container__card--stock services-container__card--avia__link-stock"
+          >
             <h3 class="card-title">Складской сервис</h3>
           </div>
           <div
@@ -166,74 +172,25 @@
       </div>
     </main>
     <div class="footer-container" id="footer">
-      <footer class="footer">
-        <div class="footer-headers">
-          <div class="footer-headers__logo"></div>
-          <h2 class="footer-headers__form-header">
-            Оставьте ваши контакты и мы с вами свяжемся
-          </h2>
-        </div>
-        <div class="footer-items">
-          <div class="footer-item">
-            <a href="https://a2logistics.ru#about" class="footer-item__map">О нас</a>
-            <a href="https://a2logistics.ru#services" class="footer-item__map">Услуги</a>
-            <a href="https://a2logistics.ru/jobs" class="footer-item__map">Вакансии</a>
-            <a href="https://a2logistics.ru/partner" class="footer-item__map">Подрядчикам</a>
-          </div>
-          <div class="footer-item">
-            <div class="footer-headers__logo footer-headers__logo--sm"></div>
-            <h3 class="footer-item__header">Контакты:</h3>
-            <a href="tel:+74951520554" class="footer-item__phone">+7 495 152 05 54</a>
-            <a href="mailto:info@a2logistics.ru"  class="footer-item__email">info@a2logistics.ru</a>
-          </div>
-          <form class="rd-mailform footer-item__form" method="post" action="send.php" >
-            <label for="" class="form-label">
-              <input
-                type="text"
-                placeholder="Имя"
-                type="text"
-                name="name"
-                data-constraints="@NotEmpty @LettersOnly"
-              />
-            </label>
-            <label for="" class="form-label">
-              <input
-                type="text"
-                placeholder="375 (29) --- -- --"
-                name="phone"
-                data-constraints="@NotEmpty @NumbersOnly"
-              />
-            </label>
-            <label for="" class="form-label">
-              <input type="text" placeholder="E-mail"  name="text"/>
-            </label>
-            <label for="privacy">
-              <input type="checkbox" id="privacy" />
-              Даю согласие на обработку Персональных данных
-            </label>
-
-            <button class="button form-btn">ОСТАВИТЬ ЗАЯВКУ</button>
-            <div class="mfInfo"></div>
-
-          </form>
-          <script>
-            (function ($) {
-              var o = $(".rd-mailform");
-              if (o.length > 0) {
-                $(document).ready(function () {
-                  if (o.length) {
-                    o.rdMailForm();
-                  }
-                });
-              }
-            })(jQuery);
-          </script>
-        </div>
-      </footer>
+      <footer class="footer"></footer>
     </div>
     <script src="modal.js"></script>
 
     <script src="script-link.js"></script>
-
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.form.min.js"></script>
+    <script type="text/javascript" src="js/jquery.rd-mailform.min.js"></script>
+    <script>
+      (function ($) {
+        var o = $(".rd-mailform");
+        if (o.length > 0) {
+          $(document).ready(function () {
+            if (o.length) {
+              o.rdMailForm();
+            }
+          });
+        }
+      })(jQuery);
+    </script>
   </body>
 </html>

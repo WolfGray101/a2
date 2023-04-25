@@ -59,7 +59,7 @@ h3 {
   font-size: 3rem;
   transition-duration: 0.3s;
 }
-input[type="checkbox"] {
+.accordeon-input {
   display: none;
 }
 .checkbox-item {

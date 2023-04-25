@@ -149,6 +149,126 @@ for (let el of menuLinks) {
   menuGroup.append(menuLink);
 }
 
+// footer
+
+const footer = document.querySelector('.footer')
+const footerHeaders = document.createElement('div')
+const footerItems = document.createElement('div')
+footerHeaders.classList.add('footer-headers')
+footerItems.classList.add('footer-items')
+footer.append(footerHeaders)
+footer.append(footerItems)
+const footerLogo = document.createElement('div')
+footerLogo.classList.add('footer-headers__logo')
+footerHeaders.append(footerLogo)
+const footerHeaderH2 =  document.createElement('h2')
+footerHeaderH2.classList.add('footer-headers__form-header')
+footerHeaderH2.textContent = 'Оставьте ваши контакты и мы с вами свяжемся'
+footerHeaders.append(footerHeaderH2)
+
+const footerMap  = document.createElement('div')
+footerMap.classList.add('footer-item')
+for (let el of menuLinks) {
+  const menuLink = document.createElement("a");
+  menuLink.classList.add("footer-item__map");
+  menuLink.href = el.link;
+  menuLink.textContent = el.text;
+  footerMap.append(menuLink);
+}
+footerItems.append(footerMap)
+
+const contactsBlock = document.createElement('div')
+contactsBlock.classList.add('footer-item')
+const contactHeader = document.createElement('h3')
+contactHeader.classList.add('footer-item__header')
+contactHeader.textContent = 'Контакты'
+const footerLogoSm =  document.createElement('div')
+footerLogoSm.classList.add('footer-headers__logo')
+footerLogoSm.classList.add('footer-headers__logo--sm')
+contactsBlock.append(footerLogoSm)
+contactsBlock.append(contactHeader)
+const aFooterPhone = document.createElement('a')
+aFooterPhone.classList.add('footer-item__phone')
+aFooterPhone.href = `tel:${phoneNum}`
+aFooterPhone.textContent = phoneNum
+contactsBlock.append(aFooterPhone)
+const aFooterMail = document.createElement('a')
+aFooterMail.classList.add('footer-item__email')
+aFooterMail.href = `mailto:${emailAdres}`
+aFooterMail.textContent = emailAdres
+contactsBlock.append(aFooterMail)
+
+footerItems.append(contactsBlock)
+
+//footer-form
+const footerForm = document.createElement('form')
+footerForm.classList.add('rd-mailform')
+footerForm.classList.add('footer-item__form')
+footerForm.method = 'post'
+footerForm.action = 'send.php'
+footerItems.append(footerForm)
+
+const nameLabel = document.createElement('label')
+const phoneLabel = document.createElement('label')
+const emailLabel = document.createElement('label')
+nameLabel.classList.add('form-label')
+phoneLabel.classList.add('form-label')
+emailLabel.classList.add('form-label')
+const nameInput = document.createElement('input')
+const phoneInput = document.createElement('input')
+const emailInput = document.createElement('input')
+nameLabel.append(nameInput)
+phoneLabel.append(phoneInput)
+emailLabel.append(emailInput)
+nameInput.type = 'text'
+phoneInput.type = 'text'
+emailInput.type = 'text'
+nameInput.placeholder = "Имя"
+nameInput.name = 'name'
+// nameInput.dataset = "@NotEmpty @NumbersOnly"
+phoneInput.placeholder = "Номер телефона"
+phoneInput.name = 'phone'
+emailInput.placeholder = "E-mail"
+emailInput.name = 'email'
+
+const privacyCheckboxLabel = document.createElement('label')
+const privacyCheckboxInput = document.createElement('input')
+const privacyCheckboxText = document.createElement('p')
+privacyCheckboxLabel.appendChild(privacyCheckboxInput)
+privacyCheckboxLabel.appendChild(privacyCheckboxText)
+privacyCheckboxLabel.classList.add('form-label__privacy-checkbox')
+privacyCheckboxText.textContent = 'Даю согласие на обработку Персональных данных'
+privacyCheckboxInput.type = 'checkbox'
+
+const formSubmitBtn = document.createElement('button')
+formSubmitBtn.classList.add('button')
+formSubmitBtn.classList.add('form-btn')
+formSubmitBtn.textContent = 'ОСТАВИТЬ ЗАЯВКУ'
+
+const infoLabel = document.createElement('div')
+infoLabel.classList.add('mfInfo')
+infoLabel.style.marginBottom = '20%'
+
+
+footerForm.append(nameLabel)
+footerForm.append(phoneLabel)
+footerForm.append(emailLabel)
+footerForm.append(privacyCheckboxLabel)
+footerForm.append(formSubmitBtn)
+footerForm.append(infoLabel)
+
+// (function ($) {
+//   var o = $(".rd-mailform");
+//   if (o.length > 0) {
+//     $(document).ready(function () {
+//       if (o.length) {
+//         o.rdMailForm();
+//       }
+//     });
+//   }
+// })(jQuery)
+
+//мобильное меню 
 burgerBtn.addEventListener("click", () => {
   document.body.style.overflow = "hidden";
   document.body.style.backgroundColor = "rgba(0, 0, 0, 0.6)";

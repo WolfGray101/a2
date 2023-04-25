@@ -147,83 +147,31 @@
           >
             <h3 class="card-title">Таможенное оформление</h3>
           </div>
-          <!-- <div
-          class="services-container__card services-container__card--owner"
-        >
-          <h3 class="card-title">НА ГЛАВНУЮ</h3>
-        </div> -->
+
         </div>
       </div>
     </main>
     <div class="footer-container" id="footer">
-      <footer class="footer">
-        <div class="footer-headers">
-          <div class="footer-headers__logo"></div>
-          <h2 class="footer-headers__form-header">
-            Оставьте ваши контакты и мы с вами свяжемся
-          </h2>
-        </div>
-        <div class="footer-items">
-          <div class="footer-item">
-            <a href="https://a2logistics.ru#about" class="footer-item__map">О нас</a>
-            <a href="https://a2logistics.ru#services" class="footer-item__map">Услуги</a>
-            <a href="https://a2logistics.ru/jobs" class="footer-item__map">Вакансии</a>
-            <a href="https://a2logistics.ru/partner" class="footer-item__map">Подрядчикам</a>
-          </div>
-          <div class="footer-item">
-            <div class="footer-headers__logo footer-headers__logo--sm"></div>
-            <h3 class="footer-item__header">Контакты:</h3>
-            <a href="tel:+74951520554" class="footer-item__phone">+7 495 152 05 54</a>
-            <a href="mailto:info@a2logistics.ru"  class="footer-item__email">info@a2logistics.ru</a>
-          </div>
-          <form class="rd-mailform footer-item__form" method="post" action="send.php" >
-            <label for="" class="form-label">
-              <input
-                type="text"
-                placeholder="Имя"
-                type="text"
-                name="name"
-                data-constraints="@NotEmpty @LettersOnly"
-              />
-            </label>
-            <label for="" class="form-label">
-              <input
-                type="text"
-                placeholder="375 (29) --- -- --"
-                name="phone"
-                data-constraints="@NotEmpty @NumbersOnly"
-              />
-            </label>
-            <label for="" class="form-label">
-              <input type="text" placeholder="E-mail"  name="text"/>
-            </label>
-            <label for="privacy">
-              <input type="checkbox" id="privacy" />
-              Даю согласие на обработку Персональных данных
-            </label>
-
-            <button class="button form-btn">ОСТАВИТЬ ЗАЯВКУ</button>
-            <div class="mfInfo"></div>
-
-          </form>
-          <script>
-            (function ($) {
-              var o = $(".rd-mailform");
-              if (o.length > 0) {
-                $(document).ready(function () {
-                  if (o.length) {
-                    o.rdMailForm();
-                  }
-                });
-              }
-            })(jQuery);
-          </script>
-        </div>
-      </footer>
+      <footer class="footer"></footer>
     </div>
     <script src="modal.js"></script>
 
     <script src="script-link.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.form.min.js"></script>
+    <script type="text/javascript" src="js/jquery.rd-mailform.min.js"></script>
+    <script>
+      (function ($) {
+        var o = $(".rd-mailform");
+        if (o.length > 0) {
+          $(document).ready(function () {
+            if (o.length) {
+              o.rdMailForm();
+            }
+          });
+        }
+      })(jQuery);
+    </script>
 
   </body>
 </html>

@@ -20,6 +20,12 @@ margin: .5rem;
 
   ul li {
     padding: .5rem 0;
+    font-size: 1rem;
+  }
+  li p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    padding: .5rem;
   }
   .job-header {
     font-size: 1rem !important;
@@ -27,4 +33,17 @@ margin: .5rem;
   }
   .services__header {
    text-align: center;
+  }
+  .info-container {
+    width: 100vw;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-width:320px) and (max-width:819px) {
+    .info-container {
+      width: auto;
+    }
+
   }

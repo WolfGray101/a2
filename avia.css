@@ -1332,3 +1332,7 @@ z-index: 100000;
     box-shadow: 0 0 0.8rem 0.05rem #f8f8f8;
   }
 }
+.active-page {
+  background-color: #f24343;
+  color: #fff;
+}

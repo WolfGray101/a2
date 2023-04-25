@@ -17,6 +17,7 @@ a {
 body {
   position: relative;
 }
+
 .header-container {
   width: 100%;
   border-bottom: #f24343 1px solid;
@@ -1350,4 +1351,9 @@ input[type="radio"] {
   .form-btn:hover {
     box-shadow: 0 0 0.8rem 0.05rem #f8f8f8;
   }
+
+}
+.active-page {
+  background-color: #f24343;
+  color: #fff;
 }

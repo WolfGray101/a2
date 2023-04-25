@@ -1,6 +1,5 @@
 const phoneNum = `+7 495 152 05 54`
 const emailAdres = 'info@a2logistics.ru'
-// const viber
 const menuList = [
   {
     text: "О нас",
@@ -28,18 +27,25 @@ const menuLinks = [
   {
     link: "about.html",
     text: "О нас",
+    id: 'about'
   },
   {
     link: "index.html#services",
     text: "Услуги",
+    id: 'service'
+
   },
   {
     link: "jobs.html",
     text: "Карьера",
+    id: 'job'
+
   },
   {
     link: "partners.html",
     text: "Подрядчикам",
+    id: 'partner'
+
   },
 ];
 
@@ -146,6 +152,7 @@ for (let el of menuLinks) {
   menuLink.classList.add("btn");
   menuLink.href = el.link;
   menuLink.textContent = el.text;
+  menuLink.id = el.id
   menuGroup.append(menuLink);
 }
 

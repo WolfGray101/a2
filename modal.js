@@ -144,7 +144,7 @@ menuGroup.append(logo);
 for (let el of menuLinks) {
   const menuLink = document.createElement("a");
   menuLink.classList.add("btn");
-  menuLink.src = el.link;
+  menuLink.href = el.link;
   menuLink.textContent = el.text;
   menuGroup.append(menuLink);
 }

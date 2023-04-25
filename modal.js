@@ -30,7 +30,7 @@ const menuLinks = [
     text: "О нас",
   },
   {
-    link: "#services",
+    link: "index.html#services",
     text: "Услуги",
   },
   {

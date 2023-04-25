@@ -261,9 +261,8 @@ input[type="radio"]:disabled + label {
 }
 .services-container__card--international:hover {
   background: url(./img/1-1.svg);
-  background-position: center bottom 30%;
-  background-size: 40%;
 }
+
 .services-container__card--avia {
   background: url(./img/3.svg);
   background-size: 60%;
@@ -381,6 +380,51 @@ input[type="radio"]:disabled + label {
   background-repeat: no-repeat;
   cursor: pointer;
 }
+.active-card--auto {
+  background: url(./img/1-1.svg);
+
+}
+.active-card--avia {
+  background: url(./img/3-1.svg);
+}
+.active-card--train {
+  background: url(./img/4-1.svg);
+}
+.active-card--sea {
+  background: url(./img/2-1.svg);
+}
+.active-card--multimodal {
+  background: url(./img/2-1.svg);  
+}
+.active-card--multimodal:before {
+  background: url(./img/3-1.svg); 
+  background-repeat: no-repeat; 
+}
+.active-card--project {
+  background: url(./img/5-1.svg);
+  
+}
+.active-card--stock {
+  background: url(./img/6-1.svg);
+  
+}
+.active-card--insurance {
+  background: url(./img/7-1.svg);
+  
+}
+.active-card--customs {
+  background: url(./img/8-1.svg);
+  
+}
+
+.active-card {
+  background-color: #f24343;
+  background-repeat: no-repeat;
+}
+.active-card h3 {
+  color: #e9e9e9;
+}
+
 .card-title {
   text-align: center;
   color: rgba(19, 19, 19, 0.7);

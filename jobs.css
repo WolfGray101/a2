@@ -41,21 +41,22 @@ margin: .5rem;
     font-size: 1.5rem;
   }
   .checkbox-header {
-    margin: 1.5rem 0;
     width: 80%;
-    margin: 0 auto;
+    margin: 1.5rem auto;
     display: flex;
     justify-content: space-between;
   }
   .checkbox-header__marker {
     font-size: 3rem;
+    transition-duration: 0.3s;
+
     }
   input[type='checkbox'] {
     display: none;
   }
   .checkbox-item {
     overflow: hidden;
-    transition-duration: 0.3s;
+    transition-duration: 0.1s;
     height: 0;
     /* justify-content: center; */
   }
@@ -66,6 +67,7 @@ margin: .5rem;
   }
   :checked ~ .checkbox-header>.checkbox-header__marker {
     transform: rotate(45deg);
+    transition-duration: 0.3s;
   }
   :checked ~ .checkbox-header {
     color:#f24343;

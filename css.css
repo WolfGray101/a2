@@ -89,12 +89,7 @@ body {
   gap: 2vw;
   font-family: "Roboto", sans-serif;
 }
-/* .menu-group::before {
-  content: "";
-  background: url(./img/EN.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+
 .btn {
   background: #f8f8f8;
   border-radius: 2vw;

@@ -630,7 +630,7 @@ z-index: 100000;
 }
 
 @media screen and (min-width: 320px) and (max-width: 819px) {
-  .menu-group > a,
+  .menu-group > a:not(.menu-group__logo),
   .contacts-group__items,
   .main-nav {
     display: none;

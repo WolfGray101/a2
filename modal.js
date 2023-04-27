@@ -310,9 +310,15 @@ burgerBtn.addEventListener("click", () => {
     modalItem.addEventListener("click", () => (location.href = el.link));
     modalItems.append(modalItem);
   }
+  const phoneText = document.createElement('p')
+  phoneText.textContent = 'Телефон:'
+  const emailText = document.createElement('p')
+  emailText.textContent = 'E-mail:'
+  modalItemsContacts.append(phoneText)
   modalItemsContacts.append(aPhone)
+  modalItemsContacts.append(emailText)
   modalItemsContacts.append(mailLink)
-  modalItemsContacts.style.alignItems = 'center'
+  modalItemsContacts.style.gap = '0'
   const modalSocialGroupLinks = socialGroupLinks
   modalSocialGroupLinks.classList.add('social-group__modal')
   modalItemsSocialGroup.append(socialGroupLinks)

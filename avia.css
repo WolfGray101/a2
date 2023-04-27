@@ -380,6 +380,7 @@ input[type="radio"]:disabled + label {
   background-repeat: no-repeat;
   cursor: pointer;
 }
+
 .active-card--auto {
   background: url(./img/1-1.svg);
 
@@ -399,6 +400,7 @@ input[type="radio"]:disabled + label {
 .active-card--multimodal:before {
   background: url(./img/3-1.svg); 
   background-repeat: no-repeat; 
+  background-size: 20%;
 }
 .active-card--project {
   background: url(./img/5-1.svg);
@@ -410,8 +412,8 @@ input[type="radio"]:disabled + label {
 }
 .active-card--insurance {
   background: url(./img/7-1.svg);
-  
 }
+
 .active-card--customs {
   background: url(./img/8-1.svg);
   
@@ -420,6 +422,7 @@ input[type="radio"]:disabled + label {
 .active-card {
   background-color: #f24343;
   background-repeat: no-repeat;
+  background-size: 40%;
 }
 .active-card h3 {
   color: #e9e9e9;
@@ -799,6 +802,10 @@ z-index: 100000;
     background-repeat: no-repeat;
     cursor: pointer;
   }
+  .active-card--insurance,
+  .active-card--multimodal:before {
+  background-size: 20%;
+}
   .card-title {
     font-size: 0.75rem;
   }

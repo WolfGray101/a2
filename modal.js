@@ -15,7 +15,7 @@ const menuList = [
   },
   {
     text: "Подрядчикам",
-    link: "partner.html",
+    link: "partners.html",
   },
   {
     text: "Контакты",

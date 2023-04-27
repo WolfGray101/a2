@@ -699,7 +699,12 @@ input[type="radio"] {
   align-items: center;
   gap: 0.5rem
 }
-
+.modal-item {
+  cursor: pointer;
+}
+.modal-item:active {
+  color: #f24343;
+}
 @media screen and (min-width:320px) {
   .contact-group__social-item img {
     width: 2rem;

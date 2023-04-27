@@ -20,4 +20,8 @@ var swiper2 = new Swiper(".mySwiper2", {
     clickable: true,
     dynamicBullets: true,
   },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  }
 });

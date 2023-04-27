@@ -285,10 +285,16 @@ burgerBtn.addEventListener("click", () => {
   modalContainer.classList.add("modal-container");
   const modalHeader = document.createElement("div");
   const modalItems = document.createElement("div");
+  const modalItemsContacts = document.createElement("div");
+  const modalItemsSocialGroup = document.createElement("div");
   modalHeader.classList.add("modal-header");
   modalItems.classList.add("modal-items");
+  modalItemsContacts.classList.add("modal-items");
+  modalItemsSocialGroup.classList.add("modal-items");
   modalContainer.append(modalHeader);
   modalContainer.append(modalItems);
+  modalContainer.append(modalItemsContacts);
+  modalContainer.append(modalItemsSocialGroup);
   const modalLogo = document.createElement("div");
   modalLogo.classList.add("modal-logo");
   const modalClose = document.createElement("div");
@@ -304,7 +310,11 @@ burgerBtn.addEventListener("click", () => {
     modalItem.addEventListener("click", () => (location.href = el.link));
     modalItems.append(modalItem);
   }
-
+  modalItemsContacts.append(aPhone)
+  modalItemsContacts.append(mailLink)
+  const modalSocialGroupLinks = socialGroupLinks
+  modalSocialGroupLinks.classList.add('social-group__modal')
+  modalItemsSocialGroup.append(socialGroupLinks)
   const closeModal = document.querySelector(".modal-close");
 
   closeModal.addEventListener("click", () => {

@@ -53,7 +53,7 @@ h3 {
 
 .checkbox-header:hover h3 {
   text-decoration: underline;
-  transform: scale(1.03);
+  /* transform: scale(1.03); */
   transition-duration: .3s;
 }
 .checkbox-header__marker {

@@ -287,7 +287,6 @@ burgerBtn.addEventListener("click", () => {
   const modalItems = document.createElement("div");
   modalHeader.classList.add("modal-header");
   modalItems.classList.add("modal-items");
-  console.log(modalContainer);
   modalContainer.append(modalHeader);
   modalContainer.append(modalItems);
   const modalLogo = document.createElement("div");

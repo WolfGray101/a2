@@ -585,7 +585,8 @@ input[type="radio"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 3rem;
+  justify-content: center;
+  padding: 1rem 4rem;
   gap: 8rem;
   position: fixed;
   top: 0;
@@ -600,18 +601,21 @@ input[type="radio"] {
   justify-content: space-between;
   width: 100%;
   align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 2rem;
 }
 .modal-logo {
   content: url(./img/EN.png);
-  width: 3rem;
-  height: 3rem;
 }
 .modal-close {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #f24343;
   transform: rotate(45deg);
   cursor: pointer;
-  font-size: 400;
+  font-weight: 300;
 }
 .modal-items {
   display: flex;
@@ -954,6 +958,10 @@ input[type="radio"] {
     top: 1rem;
     width: 3rem;
     height: 3rem;
+  }
+  .modal-logo {
+    width: 2rem;
+    height: 2rem;
   }
 }
 @media screen and (min-width: 820px) {

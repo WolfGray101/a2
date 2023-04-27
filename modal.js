@@ -312,6 +312,7 @@ burgerBtn.addEventListener("click", () => {
   }
   modalItemsContacts.append(aPhone)
   modalItemsContacts.append(mailLink)
+  modalItemsContacts.style.alignItems = 'center'
   const modalSocialGroupLinks = socialGroupLinks
   modalSocialGroupLinks.classList.add('social-group__modal')
   modalItemsSocialGroup.append(socialGroupLinks)

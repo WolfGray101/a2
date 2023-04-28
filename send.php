@@ -4,7 +4,7 @@
 
 //Первая форма
 if(isset($_POST['name']) && !empty($_POST['name'])) {
-$to = '5565486@mail.ru';
+$to = 'info@a2logistics.ru';
 $subject = 'Сообщение с сайта '.$_SERVER['SERVER_NAME'];
 $charset = "utf-8";
 $headerss ="Content-type: text/html; charset=$charset\r\n";

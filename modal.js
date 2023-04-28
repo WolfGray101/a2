@@ -239,7 +239,7 @@ nameInput.name = 'name'
 phoneInput.placeholder = "Номер телефона"
 phoneInput.name = 'phone'
 emailInput.placeholder = "E-mail"
-emailInput.name = 'email'
+emailInput.name = 'text'
 // filelInput.name = 'file'
 
 const privacyCheckboxLabel = document.createElement('label')
@@ -255,11 +255,9 @@ const formSubmitBtn = document.createElement('button')
 formSubmitBtn.classList.add('button')
 formSubmitBtn.classList.add('form-btn')
 formSubmitBtn.textContent = 'ОСТАВИТЬ ЗАЯВКУ'
-
 const infoLabel = document.createElement('div')
 infoLabel.classList.add('mfInfo')
 infoLabel.style.marginBottom = '20%'
-
 
 footerForm.append(nameLabel)
 footerForm.append(phoneLabel)
@@ -267,6 +265,20 @@ footerForm.append(emailLabel)
 footerForm.append(privacyCheckboxLabel)
 footerForm.append(formSubmitBtn)
 footerForm.append(infoLabel)
+
+const initCheckbox = document.querySelector('input[type="checkbox"]')
+initCheckbox.checked = true
+console.log(initCheckbox.checked)
+if (initCheckbox.checked) {
+  initCheckbox.setAttribute('checked', "true") 
+}
+
+
+privacyCheckboxInput.addEventListener('click', () => {
+  privacyCheckboxInput.checked? formSubmitBtn.disabled = false :formSubmitBtn.disabled = true
+    console.log(privacyCheckboxInput.checked);
+    console.log(formSubmitBtn.disabled);
+  })
 
 // (function ($) {
 //   var o = $(".rd-mailform");

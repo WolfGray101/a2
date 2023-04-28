@@ -1427,3 +1427,6 @@ input[type="radio"] {
   background-color: #f24343;
   color: #fff;
 }
+:disabled {
+  background-color: rgb(255, 255, 255, .6);
+}

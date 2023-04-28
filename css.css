@@ -608,7 +608,7 @@ input[type="radio"] {
   padding: 1rem 2rem;
 }
 .modal-logo {
-  content: url(./img/icon/logo.jpg);
+  content: url(./img/icon/logomobile.png);
 }
 .modal-close {
   font-size: 3rem;

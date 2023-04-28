@@ -3,11 +3,11 @@ const emailAdres = 'info@a2logistics.ru'
 const menuList = [
   {
     text: "О нас",
-    link: "index.html#about",
+    link: "about.html",
   },
   {
     text: "Услуги",
-    link: "index.html#service",
+    link: "index.html#services",
   },
   {
     text: "Карьера",

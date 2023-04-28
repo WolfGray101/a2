@@ -803,6 +803,7 @@ z-index: 100000;
     cursor: pointer;
   }
   .active-card--insurance,
+  .active-card--customs,
   .active-card--multimodal:before {
   background-size: 20%;
 }

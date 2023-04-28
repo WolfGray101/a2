@@ -1096,6 +1096,29 @@ input[type="radio"] {
     display: none;
   }
 }
+@media screen and (min-width:1440px) {
+  .info-container__img--import {
+    width: 40%;
+    top: 2vw;
+    right: 4rem;
+  }
+  .info-container__img--sea {
+    width: 60%;
+    top: 3vw;
+  }
+  .info-container__img--avia {
+    width: 70%;
+    top: -2vw;
+  }
+  .info-container__img--avto {
+    width: 50%;
+    top: 4vw;
+  }
+  .info-container__img--train {
+    width: 50%;
+    top: 5vw;
+  }
+}
 
 @media screen and (min-width: 820px) and (max-width: 1440px) {
   .navigate {
@@ -1146,7 +1169,27 @@ input[type="radio"] {
     right: 0vw;
     opacity: 0.75;
   }
-
+.info-container__img--import {
+    width: 45%;
+    top: 2vw;
+    right: 4rem;
+  }
+  .info-container__img--sea {
+    width: 65%;
+    top: 3vw;
+  }
+  .info-container__img--avia {
+    width: 75%;
+    top: -2vw;
+  }
+  .info-container__img--avto {
+    width: 55%;
+    top: 4vw;
+  }
+  .info-container__img--train {
+    width: 55%;
+    top: 5vw;
+  }
   .headers {
     font-size: 3.3vw;
   }

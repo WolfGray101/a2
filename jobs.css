@@ -50,6 +50,9 @@ h3 {
   cursor: pointer;
   transition-duration: .3s;
 }
+.partners-header {
+font-weight: 400;
+}
 
 .checkbox-header:hover h3 {
   text-decoration: underline;

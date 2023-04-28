@@ -312,7 +312,10 @@ burgerBtn.addEventListener("click", () => {
     const modalItem = document.createElement("div");
     modalItem.classList.add("modal-item");
     modalItem.textContent = el.text;
-    modalItem.addEventListener("click", () => (location.href = el.link));
+    modalItem.addEventListener("click", () => {
+      location.href = el.link
+      closeFn()
+      });
     modalItems.append(modalItem);
   }
   const phoneText = document.createElement('p')
@@ -329,10 +332,10 @@ burgerBtn.addEventListener("click", () => {
   modalItemsSocialGroup.append(socialGroupLinks)
   const closeModal = document.querySelector(".modal-close");
 
-  closeModal.addEventListener("click", () => {
+  function closeFn () {
     document.body.style.overflow = "";
     document.body.style.backgroundColor = "";
-
     document.querySelector(".modal-container").remove();
-  });
+  }
+   closeModal.addEventListener("click", () => closeFn());
 });

@@ -295,7 +295,8 @@ burgerBtn.addEventListener("click", () => {
   modalContainer.append(modalItems);
   modalContainer.append(modalItemsContacts);
   modalContainer.append(modalItemsSocialGroup);
-  const modalLogo = document.createElement("div");
+  const modalLogo = document.createElement("a");
+  modalLogo.href = 'index.html'
   modalLogo.classList.add("modal-logo");
   const modalClose = document.createElement("div");
   modalClose.classList.add("modal-close");

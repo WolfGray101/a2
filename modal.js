@@ -224,12 +224,15 @@ emailLabel.classList.add('form-label')
 const nameInput = document.createElement('input')
 const phoneInput = document.createElement('input')
 const emailInput = document.createElement('input')
+const filelInput = document.createElement('input')
 nameLabel.append(nameInput)
 phoneLabel.append(phoneInput)
 emailLabel.append(emailInput)
+emailLabel.append(filelInput)
 nameInput.type = 'text'
 phoneInput.type = 'text'
 emailInput.type = 'text'
+filelInput.type = 'file'
 nameInput.placeholder = "Имя"
 nameInput.name = 'name'
 // nameInput.dataset = "@NotEmpty @NumbersOnly"
@@ -237,6 +240,7 @@ phoneInput.placeholder = "Номер телефона"
 phoneInput.name = 'phone'
 emailInput.placeholder = "E-mail"
 emailInput.name = 'email'
+filelInput.name = 'file'
 
 const privacyCheckboxLabel = document.createElement('label')
 const privacyCheckboxInput = document.createElement('input')
